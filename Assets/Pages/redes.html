@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="shortcut icon" href="../Images/logo.JPG" type="image/x-icon">
+</head>
+
+<body class="grid">
+    <!-- Empieza header -->
+    <header>
+        <nav class="grid">
+            <a href="../../index.html">
+                <img src="../Images/logo.JPG" alt="Logo">
+            </a>
+            <ul>
+                <li>
+                    <div><a href="../../index.html">Inicio</a></div>
+                </li>
+                <li>
+                    <div><a href="./catálogo.html">Catálogo</a></div>
+                </li>
+                <li>
+                    <div><a href="./nosotros.html">Nosotros</a></div>
+                    <ul class="submenu">
+                        <li><a href="./nosotros.html #1">¿Quiénes somos?</a></li>
+                        <li><a href="./nosotros.html #2">Nuestro logo</a></li>
+                        <li><a href="./nosotros.html #3">Ingredientes</a></li>
+                        <li><a href="./nosotros.html #4">Preparación</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div><a href="./locales.html">Locales</a></div>
+                    <ul class="submenu">
+                        <li><a href="./locales.html #a">CABA</a></li>
+                        <li><a href="./locales.html #b">PBA</a></li>
+                        <li><a href="./locales.html #c">Córdoba</a></li>
+                        <li><a href="./locales.html #d">Online</a></li>
+                    </ul>
+                </li>
+                <li><label>Redes</label></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Termina header -->
+
+    <!-- Empieza main -->
+    <main>
+        <br>
+        <h2 class="main__titles">Por si deseas contactarnos...</h2>
+        <h2 class="main__nets">Nuestras redes son:</h2>
+        <!-- Empiezan las redes -->
+        <section class="section__nets flex-column">
+            <article>
+                <img src="../Images/Whatsapp.png">
+                <div>
+                    <h3>+54 9 11 1111-2222</h3>
+                </div>
+            </article>
+            <article>
+                <img src="../Images/Instagram.png">
+                <div>
+                    <h3>@MAXPLIok</h3>
+                </div>
+            </article>
+            <article>
+                <img src="../Images/Facebook.png">
+                <div>
+                    <h3>MAXPLIburguers</h3>
+                </div>
+            </article>
+            <article>
+                <img src="../Images/Twitter.png">
+                <div>
+                    <h3>maxpliok</h3>
+                </div>
+            </article>
+            <article>
+                <img src="../Images/Gmail.png">
+                <div>
+                    <h3>MAXPLIburguers@gmail.com</h3>
+                </div>
+            </article>
+        </section>
+        <!-- Terminan las redes -->
+        <h2 class="main__title--form">O lo puedes hacer por aquí mismo:</h2>
+        <!-- Empieza Formulario -->
+        <form class="main__form" action method="post" enctype="application/x-www-form-urlencoded">
+            <label for="#Nombres">Nombres: </label>
+            <input class="form__text" type="text" id="Nombres" placeholder="Escriba su/s nombre/s...">
+            <br>
+            <label class="form__Apellidos" for="#Apellidos">Apellidos:</label>
+            <input class="form__text" type="text" id="Apellidos" placeholder="Escriba su/s apellido/s...">
+            <br>
+            <label class="form__Email" for="#Email">Email:</label>
+            <input class="form__text" type="text" id="Email" placeholder="Escriba su mail...">
+            <br>
+            <div class="radio">
+                <input class="form__radio" type="radio" value="Hombre" name="Genero" id="Hombre">
+                <label class="form__radio--text" for="#Hombre">Hombre</label>
+            </div>
+            <div class="radio">
+                <input class="form__radio" type="radio" value="Mujer" name="Genero" id="" Mujer>
+                <label class="form__radio--text" for="#Mujer">Mujer</label>
+            </div>
+            <div class="radio">
+                <input class="form__radio" type="radio" value="No binario" name="Genero" id="No Binario">
+                <label class="form__radio--text" for="#No Binario">No Binario</label>
+            </div>
+            <br>
+            <select id="¿Qué es?">
+                <option value="Cliente/a satisfecho">Cliente/a</option>
+                <option value="Cliente/a insatisfecho">Cliente/a insatisfecho</option>
+                <option value="Inversor/a">Inversor/a</option>
+                <option value="Posible nuevo cliente">Posible nuevo cliente</option>
+                <option value="Posible nuevo inversor">Posible nuevo inversor</option>
+            </select>
+            <br>
+            <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"
+                placeholder="Escriba lo que desee aquí..."></textarea>
+            <br>
+            <input class="form__botones" type="reset" value="Borrar todo">
+            <input class="form__botones" type="submit" value="Entregar">
+            <br>
+        </form>
+        <!-- Termina formulario -->
+    </main>
+    <!-- termina main -->
+
+    <!-- Empieza footer -->
+    <footer class="flex-column">
+        <h4>MAXPLI BURGUERS</h4>
+        <ul class="footer__redes flex-row">
+            <li class="footer__redes__gmail">
+                <img src="../Images/Gmail.png">
+                <h5>MAXPLIburguers@gmail.com</h5>
+            </li>
+            <li>
+                <img src="../Images/Instagram.png">
+                <h5>MAXPLIok</h5>
+            </li>
+            <li>
+                <img src="../Images/Facebook.png">
+                <h5>MAXPLIburguers</h5>
+            </li>
+        </ul>
+        <br>
+    </footer>
+    <!-- Termina footer -->
+</body>
+
+</html>
