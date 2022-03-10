@@ -26,7 +26,7 @@ body {
     width: 100%;
     font-size: 62.5%;
     overflow-x: hidden;
-    height: 120vh;
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
 }
@@ -35,6 +35,7 @@ header {
     font-weight: bold;
     list-style: none;
     position: sticky;
+    width: 100%;
     z-index: 5;
     top: 0%;
     border-bottom: 0.1cm black solid;
@@ -73,7 +74,7 @@ header li a {
     position: relative;
     top: 0.65rem;
     font-size: 2em;
-    transition: all 3s;
+    transition: all 2s ease-in;
 }
 
 header li div:hover {
@@ -150,15 +151,13 @@ header a {
 }
 
 main {
-    background: linear-gradient(-45deg, #be9f138e 30%, #c089098e 40%, #c27a2796 70%, #dbad1677 100%), url(../Images/Background.jpg);
-    background-size: 800%;
-    background-repeat: none;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     color: white;
     margin: 0px 0px 0px 0px;
     padding: 0%;
+    animation: main_background 16s infinite ease-in;
 }
 
 main a {
@@ -247,12 +246,6 @@ footer img {
     margin-bottom: 1.5cm;
 }
 
-.article__subtitle {
-    font-size: 3cm;
-    font-weight: bold;
-    position: relative;
-}
-
 .main__section__a__boton {
     margin-top: 0rem;
     align-self: center;
@@ -290,6 +283,10 @@ footer img {
 
 .boton__div__text2 {
     display: none;
+}
+
+.boton__div:hover{
+    background-image: radial-gradient(rgb(116, 37, 17), rgb(141, 37, 37), rgb(165, 16, 16),  rgb(90, 6, 6));
 }
 
 .main__section__article1 {
@@ -431,7 +428,7 @@ footer img {
     position: relative;
     animation-name: rotacion_de_hamburguesas;
     animation-duration: 10s;
-    animation-delay: 7s;
+    animation-delay: 9s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -457,6 +454,14 @@ footer img {
     padding-top: 70px;
     border-top: black 0.4cm solid;
     margin-top: 30px;
+}
+
+.article__subtitle {
+    font-size: 3cm;
+    font-weight: bold;
+    position: relative;
+    line-height: 3cm;
+    animation: LMV 8s linear 0s infinite;
 }
 
 .article__LMV {
@@ -540,7 +545,7 @@ footer img {
 }
 
 .catalogo__item {
-    background-color: rgb(168, 128, 62);
+    background-image: linear-gradient(58deg, rgb(207, 109, 63), rgb(194, 112, 44));
     border-radius: 10%;
     border: black solid 0.3cm;
     width: 420px;
@@ -589,6 +594,7 @@ footer img {
     border-bottom: black solid 0.3cm;
     margin-top: 0.3cm;
     line-height: 1.6cm;
+    animation: precio_catalogo 1s linear infinite;
 }
 
 /* Termina catálogo */
@@ -786,7 +792,7 @@ form select {
     border-color: black;
     width: 12.88cm;
     height: 1cm;
-    margin-top: 1cm;
+    margin-top: 0cm;
     margin-bottom: 1cm;
 }
 
@@ -800,6 +806,15 @@ form select option {
     padding: 0px 12px 0px 12px;
     margin-top: 0.6cm;
     margin-right: 1.3cm;
+    background-image: linear-gradient(30deg, rgb(187, 184, 184), rgb(134, 122, 122));
+}
+
+.boton1:hover{
+    color: red;
+}
+
+.boton2:hover{
+    color: rgb(8, 66, 8);
 }
 
 /* Termina redes */
@@ -985,7 +1000,7 @@ form select option {
     }
 
     header li {
-        font-size: 0.6em;
+        font-size: 1.6vw;
     }
 
     header li div:hover {
@@ -1376,6 +1391,7 @@ form select option {
     }
 }
 
+/* Terminan media queries */
 
 
 
@@ -1383,8 +1399,8 @@ form select option {
 
 @keyframes rotacion_de_hamburguesas{
     0% { transform: rotateY(0deg);}
-    15% { transform: rotateY(180deg);}
-    30% { transform: rotateY(0deg);}
+    5% { transform: rotateY(180deg);}
+    10% { transform: rotateY(0deg);}
 }
 
 @keyframes header{
@@ -1399,4 +1415,45 @@ form select option {
     80%{ background-color: #cac7c7ec;}
     90%{ background-color: #d4c0c0ec;}
     100%{ background-color: #E5E5E5;}
+}
+
+@keyframes LMV{
+    0%{font-size: 3cm}
+    10%{color: linear}
+    20%{color: #ee1414;}
+    23%{font-size: 3cm;}
+    25%{font-size: 0.1cm}
+    27%{font-size: 3cm;}
+    30%{color: #eeff028e;}
+    40%{color: #444141;}
+    50%{color: #1c2af3;}
+    60%{color: #ffffff;}
+    70%{color: #ffd000;}
+    73%{font-size: 3cm;}
+    75%{font-size: 0.1cm;}
+    77%{font-size: 3cm;}
+    80%{color: #9ea0a0;}
+    90%{color: #fa01d9;}
+    100%{color: rgb(0, 219, 248); font-size: 3cm;}
+}
+
+@keyframes main_background{
+    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
+    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
+    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
+}
+
+@keyframes precio_catalogo{
+    0%{color: white;}
+    1%{color:red}
+    51%{color: red;}
+    52%{color: white;}
 }
