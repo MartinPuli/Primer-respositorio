@@ -1042,7 +1042,7 @@ form select option {
 
     .main__section__a__boton {
         border-radius: 15% 100% 100% 15%;
-        padding: 0.05rem 0% 0% 0.3rem;
+        padding: 0.05rem 0% 0% 0%;
         margin: auto auto;
         height: 6rem;
         width: 18rem;
@@ -1053,7 +1053,7 @@ form select option {
     .main__section__a__boton2 {
         order: 5;
         border-radius: 15% 100% 100% 15%;
-        padding: 0.05rem 0% 0% 0.3rem;
+        padding: 0.05rem 0% 0% 0rem;
         margin: auto auto;
         height: 6rem;
         width: 18rem;
@@ -1064,11 +1064,14 @@ form select option {
 
     .boton__div{
         border-radius: 15% 100% 100% 15%;
-        margin: 0%;
-        padding: 0%;
         height: 5rem;
         width: 16.4rem;
         font-size: 4em;
+        text-align: center;
+    }
+
+    .boton__div h3{
+        margin: 0% 50% 50% 40%;
     }
 
     .boton__div__text1 {
