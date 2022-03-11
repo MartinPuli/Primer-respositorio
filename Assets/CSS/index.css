@@ -63,7 +63,7 @@ header ul {
     list-style: none;
     column-gap: 0.4cm;
     margin-top: 0.4%;
-    margin-right: 10%;
+    margin-right: 8%;
 }
 
 header li {
@@ -1009,10 +1009,14 @@ form select option {
 
     .submenu {
         width: 3.5cm;
-        height: 5.1cm;
+        height: 4.9cm;
     }
 
-    .main__titles {
+    .submenu li a {
+        font-size: 0.3cm;
+    }
+
+    .main__titles{
         font-size: 4em;
         margin-bottom: 0.5cm;
         padding-top: 1%;
