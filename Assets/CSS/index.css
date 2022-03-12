@@ -213,9 +213,14 @@ footer h5 {
     font-weight: bold;
 }
 
+footer ul li:hover{
+    color: #c7c2c2b2;
+}
+
 footer img {
     width: 25px;
     display: inline-block;
+    transform: translateY(5px)
 }
 
 /* Terminan estilos generales */
@@ -1263,6 +1268,7 @@ form select option {
 
     footer img {
         width: 9px;
+        transform: translateY(1px);
     }
 
     .catalogo__aviso {
