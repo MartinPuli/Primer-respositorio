@@ -31,102 +31,35 @@ body {
     grid-template-rows: auto auto 1fr;
 }
 
-a{
-    scroll-behavior: smooth;
-}
-
 header {
-    font-weight: bold;
-    list-style: none;
-    position: sticky;
-    width: 100%;
-    z-index: 5;
-    top: 0%;
-    border-bottom: 0.1cm black solid;
-    height: 4rem;
     animation-name: header;
     animation-duration: 16s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
 }
 
-header nav {
-    grid-template-rows: 1fr;
-    grid-template-columns: 4rem 1fr;
-    justify-items: right;
-}
-
-header a img {
-    height: 4rem;
-    width: auto;
-}
-
-header ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    column-gap: 0.4cm;
-    margin-top: 0.4%;
-    margin-right: 8%;
-}
-
 header li {
-    position: relative;
-}
-
-header li a {
-    position: relative;
-    top: 0.65rem;
-    font-size: 2em;
     transition: all 2s ease-in;
+    font-size: 2em;
 }
 
-header li div:hover {
+header li a:hover {
     border-radius: 10%;
     background-color: #a09f9fd5;
-    color: #1f1c1c;
+    color: #000000;
     font-weight: 900;
-    width: 2.3cm;
-    height: 1cm;
     text-align: center;
-}
+} 
 
-header label {
-    color: darkcyan;
-    font-size: 2em;
-    position: relative;
-    top: 0.65rem;
-}
-
-.submenu {
-    position: absolute;
-    margin-top: 12%;
-    padding: 0%;
+.submenu { 
     display: none;
     z-index: 3;
     background-color: #E5E5E5;
-    height: 4.97cm;
-    width: 4cm;
-    border: black 0.1cm solid;
 }
 
 .submenu li {
     display: block;
-    width: 103%;
-    padding: 0%;
-    line-height: 0.8cm;
-    margin: 0%;
-    border-bottom: black 0.1cm solid;
-    padding-bottom: 10px;
-    color: rgb(0, 0, 0);
-}
-
-.submenu li a {
-    font-size: 0.4cm;
-    font-weight: 700;
-    width: 150%;
-    padding: 0%;
-    margin: 0%;
+    font-size: 1.4em;
 }
 
 .submenu li:hover{
@@ -148,10 +81,8 @@ header ul li:hover ul li {
 }
 
 header a {
-    color: black;
-    font-size: 1em;
     text-decoration: none;
-    text-align: right;
+    color: #000000;
 }
 
 main {
@@ -182,45 +113,13 @@ main a {
     display: grid;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    margin: auto;
-    border-top: #000000 solid 0.1cm;
-    margin: 0px 0px 0px 0px;
-    height: auto;
-}
-
-footer h4 {
-    font-size: 3em;
-    text-align: left;
-    margin-left: 4%;
-    margin-top: 0.6cm;
-    margin-bottom: 0.4cm;
-    font-weight: 500;
-}
-
-footer ul {
-    list-style: none;
-    column-gap: 23%;
-    margin-left: 6%
-}
-
-footer h5 {
-    display: inline-block;
-    font-size: 1.5em;
-    margin-bottom: 0.6cm;
-    font-weight: bold;
-}
-
 footer ul li:hover{
     color: #c7c2c2b2;
 }
 
 footer img {
     width: 25px;
-    display: inline-block;
-    transform: translateY(5px)
+    transform: translateY(-5px)
 }
 
 /* Terminan estilos generales */
@@ -255,41 +154,6 @@ footer img {
     margin-bottom: 1.5cm;
 }
 
-.main__section__a__boton {
-    margin-top: 0rem;
-    align-self: center;
-    justify-self: center;
-    width: 7rem;
-    background-color: white;
-    border: black 0.2cm solid;
-    border-radius: 100%;
-    padding-bottom: 0.02%;
-}
-
-.main__section__a__boton2 {
-    margin-top: 0rem;
-    align-self: center;
-    justify-self: center;
-    width: 7rem;
-    background-color: white;
-    border: black 0.2cm solid;
-    border-radius: 100%;
-    padding-bottom: 0.02%;
-}
-
-.boton__div {
-    background-color: rgb(255, 0, 0);
-    width: 97%;
-    height: 97%;
-    margin: auto auto auto auto;
-    border: black 0.2cm solid;
-    border-radius: 100%;
-    color: #000000;
-    font-size: 0.1em;
-    padding-bottom: 0.3rem;
-    padding-top: 0.3rem;
-}
-
 .boton__div__text2 {
     display: none;
 }
@@ -308,19 +172,6 @@ footer img {
     margin-bottom: 0.5cm;
     border-bottom: black 0.4cm solid;
     justify-content: space-evenly;
-}
-
-.div-flex {
-    padding-top: 3.1rem;
-    padding-bottom: 9.6rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 12rem;
-    margin-left: 6%;
-}
-
-.promos-row {
-    column-gap: 2.9rem;
 }
 
 .promo h4 {
@@ -430,9 +281,8 @@ footer img {
     height: 499px;
     background-color: white;
     background-image: url(../Images/Atmospheric\ Black\ Poster\ Background.jpg);
-    background-size: 378px 511.56px;
+    background-size: 378px 515.56px;
     background-repeat: initial;
-    border: 0.2cm black solid;
     border-radius: 100px 100px 60px 60px;
     position: relative;
     animation-name: rotacion_de_hamburguesas;
@@ -460,16 +310,13 @@ footer img {
 }
 
 .main__section__article2 {
+    width: 100%;
     padding-top: 70px;
     border-top: black 0.4cm solid;
     margin-top: 30px;
 }
 
 .article__subtitle {
-    font-size: 3cm;
-    font-weight: bold;
-    position: relative;
-    line-height: 3cm;
     animation: LMV 8s linear 0s infinite;
 }
 
@@ -718,112 +565,14 @@ footer img {
 
 /* Empieza redes */
 
-.main__nets {
-    font-size: 5em;
-    margin-bottom: 2cm;
-    margin-left: 3%;
-}
-
-.section__nets {
-    background-color: #443b20ec;
-    width: 85%;
-    padding: 50px 0px 50px 20px;
-    margin: auto;
-    border: 0.05cm rgba(255, 255, 255, 0.767) solid;
-    row-gap: 3rem;
-}
-
-.section__nets div {
-    font-size: 1.8em;
-    display: inline-block;
-    padding-bottom: 1rem;
-}
-
 .section__nets img {
-    width: 45px;
-    display: inline-block;
-    position: relative;
-    top: 0.6rem;
+    width: 25px;
+    transform: translateY(-5px);
 }
 
-.main__title--form {
-    font-size: 2cm;
-    text-align: center;
-    font-weight: bold;
-    line-height: 3cm;
-    text-decoration: underline;
-    margin-bottom: 2cm;
-    margin-top: 1.7cm;
-}
-
-form {
-    padding-bottom: 5%;
-    padding-left: 20px;
-    margin-left: 1cm;
-}
-
-form label {
-    font-size: 0.9cm;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-}
-
-.form__Email {
-    margin-right: 61px;
-    position: relative;
-    top: 6px;
-}
-
-.form__Apellidos {
-    margin-right: 4px;
-}
-
-form input {
-    border-width: 0.1cm;
-    border-color: black;
-    margin-bottom: 0.5cm;
-}
-
-.form__text {
-    height: 1cm;
-    width: 8.51cm;
-}
-
-form textarea {
-    border-width: 0.1cm;
-    border-color: black;
-    width: 12.84cm;
-    height: 8cm;
-}
-
-form select {
-    border-width: 0.1cm;
-    border-color: black;
-    width: 12.88cm;
-    height: 1cm;
-    margin-top: 0cm;
-    margin-bottom: 1cm;
-}
-
-form select option {
-    border: black solid 0.1cm;
-}
-
-.form__botones {
-    font-size: 1.016cm;
-    font-weight: 700;
-    padding: 0px 12px 0px 12px;
-    margin-top: 0.6cm;
-    margin-right: 1.3cm;
-    background-image: linear-gradient(30deg, rgb(187, 184, 184), rgb(134, 122, 122));
-}
-
-.boton1:hover{
-    color: red;
-}
-
-.boton2:hover{
-    color: rgb(8, 66, 8);
+.section__nets h4:hover{
+    color: #c7c2c2b2;
+    background-color: rgba(245, 245, 245, 0.171);
 }
 
 /* Termina redes */
@@ -833,30 +582,6 @@ form select option {
 /* Empiezan media queries */
 
 @media screen and (max-width: 1023px) {
-
-    header nav {
-        display: flex;
-        flex-direction: row;
-        column-gap: 30%;
-    }
-
-    footer ul {
-        column-gap: 0%;
-        justify-content: space-between;
-        margin-right: 6%;
-    }
-
-    .main__title {
-        font-size: 4cm;
-    }
-
-    .main__section__a__boton {
-        height: 2%;
-    }
-
-    .main__section__a__boton2 {
-        height: 2%;
-    }
 
     .boton__div {
         font-size: 0.9em;
@@ -957,7 +682,7 @@ form select option {
     .promo {
         width: 550px;
         height: 680px;
-        background-size: 550px 701px;
+        background-size: 550px 710px;
         border-radius: 90px 90px 65px 65px;
     }
 
@@ -993,36 +718,8 @@ form select option {
 
 @media screen and (max-width: 720px) {
 
-    header {
-        height: 3rem;
-
-    }
-
-    header nav {
-        grid-template-columns: 3rem 1fr;
-        column-gap: 0%;
-    }
-
-    header nav img {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    header li {
-        font-size: 1.6vw;
-    }
-
-    header li div:hover {
-        width: 1.4cm;
-    }
-
-    .submenu {
-        width: 3.5cm;
-        height: 4.9cm;
-    }
-
-    .submenu li a {
-        font-size: 0.3cm;
+    header ul li{
+        font-size: 2.5vw;
     }
 
     .main__titles{
@@ -1051,48 +748,6 @@ form select option {
     .main__section__article1 {
         flex-direction: column;
         row-gap: 4rem;
-    }
-
-    .main__section__a__boton {
-        border-radius: 15% 100% 100% 15%;
-        padding: 0.05rem 0% 0% 0%;
-        margin: auto auto;
-        height: 6rem;
-        width: 18rem;
-        margin-bottom: 1cm;
-        margin-top: 0%;
-    }
-
-    .main__section__a__boton2 {
-        order: 5;
-        border-radius: 15% 100% 100% 15%;
-        padding: 0.05rem 0% 0% 0rem;
-        margin: auto auto;
-        height: 6rem;
-        width: 18rem;
-        transform: rotate(180deg);
-        margin-top: 0%;
-        margin-bottom: 1cm;
-    }
-
-    .boton__div{
-        border-radius: 15% 100% 100% 15%;
-        height: 5rem;
-        width: 16.4rem;
-        font-size: 4em;
-        text-align: center;
-    }
-
-    .boton__div h3{
-        margin: 0% 50% 50% 40%;
-    }
-
-    .boton__div__text1 {
-        display: none;
-    }
-
-    .boton__div__text2 {
-        display: block;
     }
 
     .promos-row {
@@ -1200,7 +855,7 @@ form select option {
     .promo {
         width: 200px;
         height: 280px;
-        background-size: 187px 280px;
+        background-size: 187px 286px;
         border-radius: 40px 40px 35px 35px;
     }
 
@@ -1216,13 +871,13 @@ form select option {
     }
 
     .article__LMV {
+        margin: auto;
         width: 250px;
         height: 28rem;
         font-weight: 900;
         border-radius: 15% 15% 15% 15%;
         margin-bottom: 1cm;
     }
-
 
     .article__LMV img {
         position: absolute;
@@ -1254,21 +909,6 @@ form select option {
         margin: 0%;
         font-size: 3em;
         padding: 0px 70px 0px 70px;
-    }
-
-    footer h4 {
-        text-align: center;
-        font-size: 2.6em;
-        margin-bottom: 2rem;
-    }
-
-    footer ul li {
-        font-size: 0.6em;
-    }
-
-    footer img {
-        width: 9px;
-        transform: translateY(1px);
     }
 
     .catalogo__aviso {
@@ -1351,61 +991,6 @@ form select option {
 
     .locals h3 {
         font-size: 0.6cm;
-    }
-
-    .main__nets {
-        font-size: 4.6em;
-        margin-left: 2%;
-        margin-bottom: 4%;
-    }
-
-    .section__nets div {
-        font-size: 1.2em;
-    }
-
-    .main__title--form {
-        font-size: 6.6em;
-    }
-
-    form {
-        padding-bottom: 5%;
-        margin-left: 2%;
-    }
-
-    form label {
-        font-size: 0.6cm;
-        font-weight: 700;
-    }
-
-    .form__Email {
-        margin-right: 2.6rem;
-    }
-
-    .form__Apellidos {
-        margin-right: 0.26rem;
-    }
-
-    .form__text {
-        width: 11.1rem;
-    }
-
-    form textarea {
-        width: 18.5rem;
-
-    }
-
-    form select {
-        width: 18.5rem;
-    }
-
-    .form__botones {
-        font-size: 1.9em;
-    }
-
-    .radio {
-        width: 100%;
-        margin-top: 5%;
-        display: block;
     }
 }
 
