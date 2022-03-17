@@ -56,24 +56,14 @@
     <!-- Termina header -->
 
     <!-- Empieza main -->
-    <main class="main1">
-        <h1 class="main__title">MAXPLI Burguers</h1>
-        <h2 class="main__subtitle">¿Te lo vas a perder?</h2>
-        <img class="main1__img" src="./Assets/Images/logo.JPG" width="400" height="294">
+    <main class="main1 text-center">
+        <h1 class="main__title fw-bold text-decoration-underline mb-5 p-5">MAXPLI Burguers</h1>
+        <h2 class="fw-bold my-5 p-2">¿Te lo vas a perder?</h2>
+        <img class="w-50 h-auto m-auto border-4 border border-white my-5" src="./Assets/Images/logo.JPG">
         <section>
-            <h2 id="promos1">¡PROMOS 100% CASERAS!</h2>
-            <article class=" main__section__article1 d-flex flex-column justify-content-center">
+            <h2 id="promos1" class="fw-bold my-5 p-2">¡PROMOS 100% CASERAS!</h2>
+            <article class=" main__section__article1 d-flex flex-column justify-content-center gap-0">
                 <div class="d-flex flex-column gap-5 my-5 mx-auto text-center">
-                    <ul class="pagination justify-content-center m-5">
-                        <li class="page-item disabled">
-                            <label class="page-link h3">Previous</;>
-                        </li>
-                        <li class="page-item disabled"><label class="page-link h3">1</label></li>
-                        <li class="page-item"><a class="page-link h3" href="./Assets/Pages/promos_2.html#promos2">2</a></li>
-                        <li class="page-item">
-                            <a class="page-link h3" href="./Assets/Pages/promos_2.html#promos2">Next</a>
-                        </li>
-                    </ul>
                     <!-- Empiezan promos -->
                     <div class="container d-flex flex-row flex-wrap gap-5 mx-auto justify-content-center">
                         <div>
@@ -166,13 +156,22 @@
                         </div>
                     </div>
                 </div>
-                </div>
+                <ul class="pagination justify-content-center mb-4 mt-1 pt-0">
+                    <li class="page-item disabled">
+                        <label class="page-link text-muted fw-bold h1 bg-black border-white bg-opacity-50">Previous</;>
+                    </li>
+                    <li class="page-item disabled"><label class="page-link text-muted fw-bold h1 bg-black border-white bg-opacity-50">1</label></li>
+                    <li class="page-item"><a class="page-link text-white fw-bold h1 bg-black border-white bg-opacity-50" href="./Assets/Pages/promos_2.html#promos2">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link text-white fw-bold h1 bg-black border-white bg-opacity-50" href="./Assets/Pages/promos_2.html#promos2">Next</a>
+                    </li>
+                </ul>
             </article>
             <!-- Terminan promos -->
             <br>
             </article>
-            <article class="main__section__article2">
-                <h2 class="article__subtitle">LA MÁS VENDIDA</h2>
+            <article class="main__section__article2 p-0 m-0">
+                <h2 class="article__subtitle fw-bold my-5 p-2">LA MÁS VENDIDA</h2>
                 <br>
                 <!-- Empieza informacion sobre la mas vendida -->
                 <div class="article__LMV">
@@ -197,7 +196,7 @@
     <footer class="d-flex flex-column bg-black">
         <h4 class="text-center text-white h4 my-4" >MAXPLI BURGUERS</h4>
         <ul class="d-flex flex-sm-row flex-column justify-content-evenly gap-3 text-white list-unstyled mx-2">
-            <li class="">
+            <li>
                 <img class="img-fluid d-inline-block" src="./Assets/Images/Gmail.png">
                 <h6 class="h6 d-inline-block">MAXPLIburguers@gmail.com</h6>
             </li>

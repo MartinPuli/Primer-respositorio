@@ -12,16 +12,6 @@
     margin: 0%;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
 body {
     width: 100%;
     font-size: 62.5%;
@@ -67,6 +57,7 @@ header li a:hover {
 }
 .submenu li:hover a{
     color: #E5E5E5;
+    background:none;
     transition: all 0s;
 }
 
@@ -126,40 +117,12 @@ footer img {
 
 /* Empieza index e promos_2*/
 
-.main1 {
-    text-align: center;
-}
-
-.main1__img {
-    border: white 0.2cm solid;
-    margin-bottom: 1.5cm;
-    width: 40%;
-    height: auto;
-}
-
 .main__title {
-    font-size: 4.5cm;
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: auto;
-    margin-bottom: 2cm;
+    font-size: 15em;
 }
 
-.main1 h2 {
-    font-size: 2.2cm;
-    font-weight: 700;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1.5cm;
-}
-
-.boton__div__text2 {
-    display: none;
-}
-
-.boton__div:hover{
-    background-image: radial-gradient(rgb(116, 37, 17), rgb(141, 37, 37), rgb(165, 16, 16),  rgb(90, 6, 6));
+.main1 h2{
+    font-size: 12em;
 }
 
 .main__section__article1 {
@@ -310,10 +273,7 @@ footer img {
 }
 
 .main__section__article2 {
-    width: 100%;
-    padding-top: 70px;
     border-top: black 0.4cm solid;
-    margin-top: 30px;
 }
 
 .article__subtitle {
@@ -373,31 +333,8 @@ footer img {
 
 /* Empieza catálogo */
 
-.catalogo__aviso {
-    font-size: 0.4cm;
-    font-weight: bold;
-    margin-left: 0.3cm;
-    margin-bottom: 6%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .main__catalogo {
     border-top: rgb(0, 0, 0) solid 0.4cm;
-    width: 100%;
-    padding: 7% 0% 7% 0%;
-    background-color: #443b20ec;
-    margin-top: 1cm;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: auto auto;
-    row-gap: 7.5rem;
-}
-
-.catalogo-row {
-    margin: auto auto;
-    justify-content: center;
-    column-gap: 7.5rem;
-    row-gap: 7, 5rem;
-    flex-wrap: wrap;
 }
 
 .catalogo__item {
@@ -407,6 +344,7 @@ footer img {
     width: 420px;
     height: 500px;
     padding-left: 0%;
+    margin: auto;
 }
 
 .item__div1 {
@@ -457,37 +395,23 @@ footer img {
 
 /* Empieza nosotros */
 
-.main__enlaces {
-    margin: 6rem 0rem 9rem 2rem;
-    list-style: none;
-
-}
-
 .main__enlaces li {
-    margin-bottom: 0.4cm;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: solid;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: capitalizes;
 }
 
+.main__enlaces li a:hover{
+    color: #817b7b;
+    background-color: #00000036;
+}
+
 .main__section {
     background-color: #443b20ec;
-    margin-left: 0;
     border-bottom: solid black 0.4cm;
-    padding-bottom: 0.2cm;
-    margin-bottom: 2cm;
 }
 
 .main__section article {
     border-top: black solid 0.4cm;
-    width: 100%;
-    margin-top: 1cm;
-    padding: 2rem;
-    justify-content: center;
-    column-gap: 10%;
-
 }
 
 .section__texto {
@@ -499,66 +423,15 @@ footer img {
 }
 
 .main__section img {
-    height: auto;
     width: 44vw;
-    border: white solid 0.1cm;
 }
 
 /* Termina nosotros */
 
 /* Empieza locales */
 
-.locals {
-    text-align: center;
-    background-color: #443b20ec;
-    width: 90%;
-    margin: auto auto;
-    margin-top: 10%;
-}
-
-.locals article {
-    width: 100%;
-    padding-bottom: 30px;
-    border: 0.5cm 0.5cm 0.5cm 0cm;
-    border: solid #312b1a;
-}
-
-.locals iframe {
-    border: black solid 0.1cm;
-    margin: auto auto;
-    width: 70%;
+.h-locals{
     height: 50vw;
-}
-
-.locals__Online img {
-    margin: auto auto;
-    width: 40%;
-    border: black solid 0.1cm;
-}
-
-.locals h2 {
-    font-size: 1.5cm;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 0.7cm;
-    margin-bottom: 0.7cm;
-}
-
-.locals h3 {
-    font-size: 1cm;
-    font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
-    margin-top: 0.1cm;
-    margin-bottom: 2cm;
-}
-
-.locals h5 {
-    font-size: 3vw;
-    margin-top: 0.5cm;
-    text-align: center;
-    font-weight: bold;
 }
 
 /* Termina locales */
@@ -579,21 +452,73 @@ footer img {
 
 
 
+
+/* Empiezan animaciones */
+
+@keyframes rotacion_de_hamburguesas{
+    0% { transform: rotateY(0deg);}
+    5% { transform: rotateY(180deg);}
+    10% { transform: rotateY(0deg);}
+}
+
+@keyframes header{
+    0%{ background-color: #E5E5E5;}
+    10%{ background-color: #e6bfbf;}
+    20%{ background-color: #e4cacaf6;}
+    25%{ background-color: #ebecec;}
+    35%{ background-color: #c5dbdbb4;}
+    50%{ background-color: #f7e1e1e1;}
+    60%{ background-color: #f5d8d8ed;}
+    70%{ background-color: #e4e0e0ea;}
+    80%{ background-color: #cac7c7ec;}
+    90%{ background-color: #d4c0c0ec;}
+    100%{ background-color: #E5E5E5;}
+}
+
+@keyframes LMV{
+    10%{color: #1c2af3;}
+    20%{color: #ee1414;}
+    30%{color: #eeff028e;}
+    40%{color: #444141;}
+    50%{color: #1c2af3;}
+    60%{color: #ffffff;}
+    70%{color: #ffd000;}
+    80%{color: #9ea0a0;}
+    90%{color: #fa01d9;}
+    100%{color: rgb(0, 219, 248);}
+}
+
+@keyframes main_background{
+    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
+    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
+    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
+}
+
+@keyframes precio_catalogo{
+    0%{color: white;}
+    1%{color:red}
+    51%{color: red;}
+    52%{color: white;}
+}
+
+/* Terminan animaciones */
+
+
+
+
+
+
 /* Empiezan media queries */
 
 @media screen and (max-width: 1023px) {
-
-    .boton__div {
-        font-size: 0.9em;
-        padding-top: 0%;
-    }
-
-    .promos-row {
-        display: flex;
-        flex-direction: column;
-        row-gap: 15rem;
-    }
-
     .promo h4 {
         border-radius: 25%;
         font-size: 2.8em;
@@ -696,10 +621,6 @@ footer img {
         font-size: 3em;
     }
 
-    .catalogo__aviso {
-        font-size: 2em;
-    }
-
     .locals h2 {
         font-size: 1.2cm;
     }
@@ -728,21 +649,13 @@ footer img {
         padding-top: 1%;
     }
 
-    main {
-        width: 100%;
-    }
-
     .main__title {
         text-align: center;
         font-size: 6.8em;
     }
 
-    .main1 h2 {
+    .main1 h2{
         font-size: 6em;
-        font-weight: 700;
-        text-align: center;
-        font-weight: bold;
-        margin-bottom: 1.5cm;
     }
 
     .main__section__article1 {
@@ -871,37 +784,37 @@ footer img {
     }
 
     .article__LMV {
-        margin: auto;
-        width: 250px;
+        width: 340px;
         height: 28rem;
         font-weight: 900;
         border-radius: 15% 15% 15% 15%;
+        margin: auto;
         margin-bottom: 1cm;
     }
 
     .article__LMV img {
         position: absolute;
-        top: 10.8em;
-        left: -4.5rem;
+        top: 5.5em;
+        left: -5rem;
         margin: auto auto;
-        width: 160%;
+        width: 150%;
     }
 
     .LMV__nombre {
         position: absolute;
         top: 22rem;
-        left: 0.9rem;
+        left: 4rem;
         width: 13rem;
     }
 
     .LMV__nombre h3 {
-        font-size: 2em;
+        font-size: 3em;
         margin: 0%;
     }
 
     .LMV__precio {
-        top: 3.52rem;
-        left: 2.6rem;
+        top: 3.8rem;
+        left: 8.1rem;
         transform: rotate(40deg);
     }
 
@@ -909,10 +822,6 @@ footer img {
         margin: 0%;
         font-size: 3em;
         padding: 0px 70px 0px 70px;
-    }
-
-    .catalogo__aviso {
-        font-size: 1em;
     }
 
     .main__catalogo {
@@ -927,8 +836,8 @@ footer img {
 
     .catalogo__item {
         border-radius: 8%;
-        width: 220px;
-        height: 300px;
+        width: 250px;
+        height: 340px;
         padding-top: 0%;
     }
 
@@ -939,7 +848,7 @@ footer img {
     }
 
     .main__catalogo img {
-        margin-left: 2rem;
+        margin-left: 2.8rem;
         margin-top: 0.2cm;
         width: 140px;
         height: 120px;
@@ -957,99 +866,56 @@ footer img {
         line-height: 1.3rem;
     }
 
-    .main__enlaces {
-        margin-bottom: 0%;
-        margin-top: 1%;
-    }
-
-    .main__enlaces li {
-        font-size: 1.3em;
-    }
-
     .main__section article {
         padding: 1rem;
         column-gap: 10%;
-
     }
 
     .section__texto {
         text-align: justify;
         font-family: monospace;
-        font-size: 1.6vw;
-        width: 42%;
+        font-size: 1.7vw;
     }
 
     .main__section img {
-        width: 42%;
-        height: 42vw;
         border: white solid 0.1cm;
     }
+}
 
-    .locals h2 {
-        font-size: 1cm;
+@media screen and (max-width: 500px) {
+    .article__LMV {
+        width: 240px;
+        height: 22rem;
     }
 
-    .locals h3 {
-        font-size: 0.6cm;
+    .article__LMV img {
+        top: 7.5em;
+        left: -4rem;
+        width: 135%;
+    }
+
+    .LMV__nombre {
+        position: absolute;
+        top: 16.8rem;
+        left: 2rem;
+        width: 10rem;
+    }
+
+    .LMV__nombre h3 {
+        font-size: 2.3em;
+    }
+
+    .LMV__precio {
+        top: 2.83rem;
+        left: 3.7rem;
+        transform: rotate(35deg);
+    }
+
+    .LMV__precio h4 {
+        font-size: 2.3em;
+        padding: 0px 60px 0px 60px;
     }
 }
 
 /* Terminan media queries */
 
-
-
-/* Animaciones */
-
-@keyframes rotacion_de_hamburguesas{
-    0% { transform: rotateY(0deg);}
-    5% { transform: rotateY(180deg);}
-    10% { transform: rotateY(0deg);}
-}
-
-@keyframes header{
-    0%{ background-color: #E5E5E5;}
-    10%{ background-color: #e6bfbf;}
-    20%{ background-color: #e4cacaf6;}
-    25%{ background-color: #ebecec;}
-    35%{ background-color: #c5dbdbb4;}
-    50%{ background-color: #f7e1e1e1;}
-    60%{ background-color: #f5d8d8ed;}
-    70%{ background-color: #e4e0e0ea;}
-    80%{ background-color: #cac7c7ec;}
-    90%{ background-color: #d4c0c0ec;}
-    100%{ background-color: #E5E5E5;}
-}
-
-@keyframes LMV{
-    10%{color: #1c2af3;}
-    20%{color: #ee1414;}
-    30%{color: #eeff028e;}
-    40%{color: #444141;}
-    50%{color: #1c2af3;}
-    60%{color: #ffffff;}
-    70%{color: #ffd000;}
-    80%{color: #9ea0a0;}
-    90%{color: #fa01d9;}
-    100%{color: rgb(0, 219, 248);}
-}
-
-@keyframes main_background{
-    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
-    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
-    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
-}
-
-@keyframes precio_catalogo{
-    0%{color: white;}
-    1%{color:red}
-    51%{color: red;}
-    52%{color: white;}
-}
