@@ -1,0 +1,126 @@
+
+
+
+/* Empieza header */
+
+header {
+    animation-name: header;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+    a {
+        text-decoration: none;
+        color: $principal;
+    }
+
+    ul {
+        li {
+            font-size: 2em;
+            color: $principal;
+
+            &:hover .submenu {
+                display: block;
+                position: absolute;
+            }
+
+            &:hover {
+                border-radius: 10%;
+                background-color: #a09f9fd5;
+                font-weight: 900;
+                text-align: center;
+            }
+
+            &:hover a{
+                color: $principal;
+            }
+
+            .submenu {
+                display: none;
+                z-index: 3;
+                background-color: #E5E5E5;
+                transition: all 2s ease-in;
+
+                li {
+                    display: block;
+                    font-size: 1.4em;
+                    transition: all 2s ease-in;
+                    height: auto;
+                    text-align: left;
+
+                    &:hover {
+                        background-color: $principal;
+                        border-radius: 0%;
+                        height: auto;
+                    }
+
+                    &:hover a {
+                        color: #E5E5E5;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+/* Animaciones */
+
+@keyframes header {
+    0% {
+        background-color: #E5E5E5;
+    }
+
+    10% {
+        background-color: #e6bfbf;
+    }
+
+    20% {
+        background-color: #e4cacaf6;
+    }
+
+    25% {
+        background-color: #ebecec;
+    }
+
+    35% {
+        background-color: #c5dbdbb4;
+    }
+
+    50% {
+        background-color: #f7e1e1e1;
+    }
+
+    60% {
+        background-color: #f5d8d8ed;
+    }
+
+    70% {
+        background-color: #e4e0e0ea;
+    }
+
+    80% {
+        background-color: #cac7c7ec;
+    }
+
+    90% {
+        background-color: #d4c0c0ec;
+    }
+
+    100% {
+        background-color: #E5E5E5;
+    }
+}
+
+
+/* Media queries */
+
+
+@media screen and (max-width: 720px) {
+    header ul li {
+        font-size: 2.5vw;
+    }
+}
+
+/* Termina header */

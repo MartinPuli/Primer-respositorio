@@ -1,0 +1,63 @@
+
+
+
+/* Empieza normalize */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+body {
+    width: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+}
+
+main {
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    color: $secondary;
+    margin: 0px 0px 0px 0px;
+    padding: 0%;
+    animation: main_background 16s infinite ease-in;
+
+    a{ 
+        color: $secondary;
+        text-decoration: none;
+    }
+
+    &__titles {
+        font-size: 3cm;
+        font-weight: bold;
+        text-align: center;
+        padding: 7%;
+        text-decoration: underline;
+        margin-bottom: 1.5cm;
+    }
+}
+
+/* Animaciones */
+
+@keyframes main_background{
+    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
+    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
+    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
+    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
+    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
+    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
+    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
+}
+
+/* Termina normalize */
