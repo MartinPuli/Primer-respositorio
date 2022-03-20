@@ -39,9 +39,9 @@ header li a:hover {
     color: #000000;
     font-weight: 900;
     text-align: center;
-} 
+}
 
-.submenu { 
+.submenu {
     display: none;
     z-index: 3;
     background-color: #E5E5E5;
@@ -52,12 +52,13 @@ header li a:hover {
     font-size: 1.4em;
 }
 
-.submenu li:hover{
+.submenu li:hover {
     background-color: #000000;
 }
-.submenu li:hover a{
+
+.submenu li:hover a {
     color: #E5E5E5;
-    background:none;
+    background: none;
     transition: all 0s;
 }
 
@@ -104,7 +105,7 @@ main a {
     display: grid;
 }
 
-footer ul li:hover{
+footer ul li:hover {
     color: #c7c2c2b2;
 }
 
@@ -184,7 +185,7 @@ footer img {
     text-transform: capitalizes;
 }
 
-.main__enlaces li a:hover{
+.main__enlaces li a:hover {
     color: #817b7b;
     background-color: #00000036;
 }
@@ -214,7 +215,7 @@ footer img {
 
 /* Empieza locales */
 
-.h-locals{
+.h-locals {
     height: 50vw;
 }
 
@@ -227,7 +228,7 @@ footer img {
     transform: translateY(-5px);
 }
 
-.section__nets h4:hover{
+.section__nets h4:hover {
     color: #c7c2c2b2;
     background-color: rgba(245, 245, 245, 0.171);
 }
@@ -239,58 +240,170 @@ footer img {
 
 /* Empiezan animaciones */
 
-@keyframes rotacion_de_hamburguesas{
-    0% { transform: rotateY(0deg);}
-    5% { transform: rotateY(360deg);}
-    10% { transform: rotateY(0deg);}
+@keyframes rotacion_de_hamburguesas {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    5% {
+        transform: rotateY(360deg);
+    }
+
+    10% {
+        transform: rotateY(0deg);
+    }
 }
 
-@keyframes header{
-    0%{ background-color: #E5E5E5;}
-    10%{ background-color: #e6bfbf;}
-    20%{ background-color: #e4cacaf6;}
-    25%{ background-color: #ebecec;}
-    35%{ background-color: #c5dbdbb4;}
-    50%{ background-color: #f7e1e1e1;}
-    60%{ background-color: #f5d8d8ed;}
-    70%{ background-color: #e4e0e0ea;}
-    80%{ background-color: #cac7c7ec;}
-    90%{ background-color: #d4c0c0ec;}
-    100%{ background-color: #E5E5E5;}
+@keyframes header {
+    0% {
+        background-color: #E5E5E5;
+    }
+
+    10% {
+        background-color: #e6bfbf;
+    }
+
+    20% {
+        background-color: #e4cacaf6;
+    }
+
+    25% {
+        background-color: #ebecec;
+    }
+
+    35% {
+        background-color: #c5dbdbb4;
+    }
+
+    50% {
+        background-color: #f7e1e1e1;
+    }
+
+    60% {
+        background-color: #f5d8d8ed;
+    }
+
+    70% {
+        background-color: #e4e0e0ea;
+    }
+
+    80% {
+        background-color: #cac7c7ec;
+    }
+
+    90% {
+        background-color: #d4c0c0ec;
+    }
+
+    100% {
+        background-color: #E5E5E5;
+    }
 }
 
-@keyframes LMV{
-    10%{color: #1c2af3;}
-    20%{color: #ee1414;}
-    30%{color: #eeff028e;}
-    40%{color: #444141;}
-    50%{color: #1c2af3;}
-    60%{color: #ffffff;}
-    70%{color: #ffd000;}
-    80%{color: #9ea0a0;}
-    90%{color: #fa01d9;}
-    100%{color: rgb(0, 219, 248);}
+@keyframes LMV {
+    10% {
+        color: #1c2af3;
+    }
+
+    20% {
+        color: #ee1414;
+    }
+
+    30% {
+        color: #eeff028e;
+    }
+
+    40% {
+        color: #444141;
+    }
+
+    50% {
+        color: #1c2af3;
+    }
+
+    60% {
+        color: #ffffff;
+    }
+
+    70% {
+        color: #ffd000;
+    }
+
+    80% {
+        color: #9ea0a0;
+    }
+
+    90% {
+        color: #fa01d9;
+    }
+
+    100% {
+        color: rgb(0, 219, 248);
+    }
 }
 
-@keyframes main_background{
-    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
-    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
-    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
+@keyframes main_background {
+    0% {
+        background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    10% {
+        background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    20% {
+        background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    30% {
+        background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    40% {
+        background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    50% {
+        background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    60% {
+        background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    70% {
+        background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    80% {
+        background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    90% {
+        background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
+
+    100% {
+        background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);
+    }
 }
 
-@keyframes precio_catalogo{
-    0%{color: white;}
-    1%{color:red}
-    51%{color: red;}
-    52%{color: white;}
+@keyframes precio_catalogo {
+    0% {
+        color: white;
+    }
+
+    1% {
+        color: red
+    }
+
+    51% {
+        color: red;
+    }
+
+    52% {
+        color: white;
+    }
 }
 
 /* Terminan animaciones */
@@ -303,7 +416,7 @@ footer img {
 /* Empiezan media queries */
 
 @media screen and (max-width: 1023px) {
-    
+
 
     .locals h2 {
         font-size: 1.2cm;
@@ -323,11 +436,11 @@ footer img {
 
 @media screen and (max-width: 720px) {
 
-    header ul li{
+    header ul li {
         font-size: 2.5vw;
     }
 
-    .main__titles{
+    .main__titles {
         font-size: 4em;
         margin-bottom: 0.5cm;
         padding-top: 1%;
@@ -392,4 +505,3 @@ footer img {
 }
 
 /* Terminan media queries */
-
