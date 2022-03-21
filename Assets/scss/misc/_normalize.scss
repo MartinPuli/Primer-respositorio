@@ -20,7 +20,7 @@ body {
     grid-template-rows: auto auto 1fr;
 }
 
-main {
+.main {
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
@@ -42,6 +42,16 @@ main {
         text-decoration: underline;
         margin-bottom: 1.5cm;
     }
+
+    &__enlaces li {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-transform: capitalizes;
+        &:hover {
+            color: #817b7b;
+            background-color: #00000036;
+        }
+    }
+    
 }
 
 /* Animaciones */
@@ -59,5 +69,19 @@ main {
     90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
     100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
 }
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 720px) {
+
+    .main__titles {
+        font-size: 4em;
+        margin-bottom: 0.5cm;
+        padding-top: 1%;
+    }
+}
+
 
 /* Termina normalize */

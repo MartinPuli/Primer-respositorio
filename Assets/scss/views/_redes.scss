@@ -1,0 +1,30 @@
+/* Empieza redes */
+
+.section__nets {
+
+    img {
+        width: 25px;
+        transform: translateY(-5px);
+    }
+
+    .section__nets h4:hover {
+        color: #c7c2c2b2;
+        background-color: rgba(245, 245, 245, 0.171);
+    }
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1023px) {
+
+    .main__title--form {
+        width: 80%;
+        font-size: 8.6em;
+        margin: 10% auto;
+    }
+
+}
+
+
+/* Termina redes */

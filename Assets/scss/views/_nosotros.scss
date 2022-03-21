@@ -1,0 +1,47 @@
+/* Empieza nosotros */
+
+.main__section {
+    background-color: #443b20ec;
+    border-bottom: solid black 0.4cm;
+
+    img {
+        width: 44vw;
+    }
+
+    article {
+        border-top: black solid 0.4cm;
+
+        .section__texto {
+            text-align: justify;
+            font-family: monospace;
+            font-size: 1.75vw;
+            width: 44vw;
+            height: 30%;
+        }
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 720px) {
+
+    .main__section {
+        img {
+            border: white solid 0.1cm;
+        }
+
+        article {
+            padding: 1rem;
+            column-gap: 10%;
+
+            .section__texto {
+                text-align: justify;
+                font-family: monospace;
+                font-size: 1.7vw;
+            }
+        }
+    }
+
+
+}
+
+/* Termina nosotros */

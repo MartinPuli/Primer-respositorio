@@ -1,0 +1,132 @@
+
+
+
+/* Empieza catalogo */
+
+.main__catalogo {
+    border-top: rgb(0, 0, 0) solid 0.4cm;
+
+    img {
+        margin-left: 1.8cm;
+        margin-top: 0.2cm;
+        width: 250px;
+        height: 170px;
+    }
+
+    p {
+        text-align: justify;
+        font-size: 2em;
+        width: 90%;
+        margin: auto;
+        border: white solid 0.1cm;
+        margin-bottom: 0.5cm;
+    }
+
+    .catalogo__item {
+        background-image: linear-gradient(58deg, rgb(207, 109, 63), rgb(194, 112, 44));
+        border-radius: 10%;
+        border: black solid 0.3cm;
+        width: 420px;
+        height: 500px;
+        padding-left: 0%;
+        margin: auto;
+
+        .item__div1 {
+            font-size: 0.8cm;
+            color: $secondary;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            background-color: #443b20ec;
+            border-top: black solid 0.3cm;
+            border-bottom: black solid 0.3cm;
+            margin-top: 0.9cm;
+            margin-left: 0%;
+            padding-left: 0%;
+        }
+
+
+        .item__div2 {
+            font-size: 1.5cm;
+            color: $secondary;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            background-color: #443b20ec;
+            border-top: black solid 0.3cm;
+            border-bottom: black solid 0.3cm;
+            margin-top: 0.3cm;
+            line-height: 1.6cm;
+            animation: precio_catalogo 1s linear infinite;
+        }
+    }
+}
+
+/* Animaciones */
+
+
+@keyframes precio_catalogo {
+    0% {
+        color: white;
+    }
+
+    1% {
+        color: red
+    }
+
+    51% {
+        color: red;
+    }
+
+    52% {
+        color: white;
+    }
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 720px) {
+
+    .main__catalogo {
+        row-gap: 4rem;
+
+        img {
+            margin-left: 2.8rem;
+            margin-top: 0.2cm;
+            width: 140px;
+            height: 120px;
+        }
+
+        p {
+            font-size: 0.9em;
+            margin-bottom: 0.2cm;
+        }
+
+        .catalogo__item {
+            border-radius: 8%;
+            width: 250px;
+            height: 340px;
+            padding-top: 0%;
+
+            .item__div1 {
+                margin-top: 6%;
+                font-size: 1.7em;
+                margin-bottom: 0rem;
+            }
+
+            .item__div2 {
+                font-size: 2.2em;
+                width: 100%;
+                margin-top: 0.7rem;
+                line-height: 1.3rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+/* Termina catalogo */

@@ -1,0 +1,23 @@
+/* Empieza locales */
+
+.h-locals {
+    height: 50vw;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1023px) {
+
+    .locals {
+        h2 {
+            font-size: 1.2cm;
+        }
+
+        h3 {
+            font-size: 0.8cm;
+        }
+    }
+}
+
+/* Termina locales */

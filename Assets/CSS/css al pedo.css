@@ -33,6 +33,12 @@ main {
     padding: 7%;
     text-decoration: underline;
     margin-bottom: 1.5cm; }
+  main__enlaces li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalizes; }
+    main__enlaces li:hover {
+      color: #817b7b;
+      background-color: #00000036; }
 
 /* Animaciones */
 @keyframes main_background {
@@ -58,6 +64,13 @@ main {
     background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03); }
   100% {
     background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03); } }
+
+/* Media queries */
+@media screen and (max-width: 720px) {
+  .main__titles {
+    font-size: 4em;
+    margin-bottom: 0.5cm;
+    padding-top: 1%; } }
 
 /* Termina normalize */
 /* Empieza footer */
@@ -532,3 +545,147 @@ header {
         padding: 0px 60px 0px 60px; } }
 
 /* Termina index y promos_2 */
+/* Empieza catalogo */
+.main__catalogo {
+  border-top: black solid 0.4cm; }
+  .main__catalogo img {
+    margin-left: 1.8cm;
+    margin-top: 0.2cm;
+    width: 250px;
+    height: 170px; }
+  .main__catalogo p {
+    text-align: justify;
+    font-size: 2em;
+    width: 90%;
+    margin: auto;
+    border: white solid 0.1cm;
+    margin-bottom: 0.5cm; }
+  .main__catalogo .catalogo__item {
+    background-image: linear-gradient(58deg, #cf6d3f, #c2702c);
+    border-radius: 10%;
+    border: black solid 0.3cm;
+    width: 420px;
+    height: 500px;
+    padding-left: 0%;
+    margin: auto; }
+    .main__catalogo .catalogo__item .item__div1 {
+      font-size: 0.8cm;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      background-color: #443b20ec;
+      border-top: black solid 0.3cm;
+      border-bottom: black solid 0.3cm;
+      margin-top: 0.9cm;
+      margin-left: 0%;
+      padding-left: 0%; }
+    .main__catalogo .catalogo__item .item__div2 {
+      font-size: 1.5cm;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      background-color: #443b20ec;
+      border-top: black solid 0.3cm;
+      border-bottom: black solid 0.3cm;
+      margin-top: 0.3cm;
+      line-height: 1.6cm;
+      animation: precio_catalogo 1s linear infinite; }
+
+/* Animaciones */
+@keyframes precio_catalogo {
+  0% {
+    color: white; }
+  1% {
+    color: red; }
+  51% {
+    color: red; }
+  52% {
+    color: white; } }
+
+/* Media queries */
+@media screen and (max-width: 720px) {
+  .main__catalogo {
+    row-gap: 4rem; }
+    .main__catalogo img {
+      margin-left: 2.8rem;
+      margin-top: 0.2cm;
+      width: 140px;
+      height: 120px; }
+    .main__catalogo p {
+      font-size: 0.9em;
+      margin-bottom: 0.2cm; }
+    .main__catalogo .catalogo__item {
+      border-radius: 8%;
+      width: 250px;
+      height: 340px;
+      padding-top: 0%; }
+      .main__catalogo .catalogo__item .item__div1 {
+        margin-top: 6%;
+        font-size: 1.7em;
+        margin-bottom: 0rem; }
+      .main__catalogo .catalogo__item .item__div2 {
+        font-size: 2.2em;
+        width: 100%;
+        margin-top: 0.7rem;
+        line-height: 1.3rem; } }
+
+/* Termina catalogo */
+/* Empieza nosotros */
+.main__section {
+  background-color: #443b20ec;
+  border-bottom: solid black 0.4cm; }
+  .main__section img {
+    width: 44vw; }
+  .main__section article {
+    border-top: black solid 0.4cm; }
+    .main__section article .section__texto {
+      text-align: justify;
+      font-family: monospace;
+      font-size: 1.75vw;
+      width: 44vw;
+      height: 30%; }
+
+/* Media queries */
+@media screen and (max-width: 720px) {
+  .main__section img {
+    border: white solid 0.1cm; }
+  .main__section article {
+    padding: 1rem;
+    column-gap: 10%; }
+    .main__section article .section__texto {
+      text-align: justify;
+      font-family: monospace;
+      font-size: 1.7vw; } }
+
+/* Termina nosotros */
+/* Empieza locales */
+.h-locals {
+  height: 50vw; }
+
+/* Media queries */
+@media screen and (max-width: 1023px) {
+  .locals h2 {
+    font-size: 1.2cm; }
+  .locals h3 {
+    font-size: 0.8cm; } }
+
+/* Termina locales */
+/* Empieza redes */
+.section__nets img {
+  width: 25px;
+  transform: translateY(-5px); }
+
+.section__nets .section__nets h4:hover {
+  color: #c7c2c2b2;
+  background-color: rgba(245, 245, 245, 0.171); }
+
+/* Media queries */
+@media screen and (max-width: 1023px) {
+  .main__title--form {
+    width: 80%;
+    font-size: 8.6em;
+    margin: 10% auto; } }
+
+/* Termina redes */
