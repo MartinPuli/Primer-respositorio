@@ -4,12 +4,64 @@
 /* Empieza footer */
 
 footer{
+    color: $secondary;
+    background-color: black;
+    padding-bottom: 1cm;
+
     ul li:hover{
-        color: #c7c2c2b2;
+        color: #969696b2;
     }
     img {
         width: 25px;
         transform: translateY(-5px);
+    }
+}
+
+/* Animaciones */
+
+@keyframes footer {
+    0% {
+        background-color: #E5E5E5;
+    }
+
+    10% {
+        background-color: #e6bfbf;
+    }
+
+    20% {
+        background-color: #e4cacaf6;
+    }
+
+    25% {
+        background-color: #ebecec;
+    }
+
+    35% {
+        background-color: #c5dbdbb4;
+    }
+
+    50% {
+        background-color: #f7e1e1e1;
+    }
+
+    60% {
+        background-color: #f5d8d8ed;
+    }
+
+    70% {
+        background-color: #e4e0e0ea;
+    }
+
+    80% {
+        background-color: #cac7c7ec;
+    }
+
+    90% {
+        background-color: #d4c0c0ec;
+    }
+
+    100% {
+        background-color: #E5E5E5;
     }
 }
 

@@ -3,6 +3,19 @@
 
 /* Helpers */
 
-.grid{
+@mixin disp-flex ($direction, $gap, $justify: flex-start, $align: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-content: $align;
+    gap: $gap;
+}
+
+@mixin disp-grid ($columns: 0, $rows: 0, $gap: 0, $justify: flex-start, $align: flex-start) {
     display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    gap: $gap;
+    justify-content: $justify;
+    align-content: $align;
 }

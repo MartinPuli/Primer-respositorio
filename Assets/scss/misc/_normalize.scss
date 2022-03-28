@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     font-size: 62.5%;
     overflow-x: hidden;
     height: 100%;
@@ -25,9 +25,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     color: $secondary;
-    margin: 0px 0px 0px 0px;
-    padding: 0%;
-    animation: main_background 16s infinite ease-in;
+    animation-name: main_background;
+    animation-duration: 16s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
     a{ 
         color: $secondary;
@@ -35,7 +36,7 @@ body {
     }
 
     &__titles {
-        font-size: 3cm;
+        font-size: 2.7cm;
         font-weight: bold;
         text-align: center;
         padding: 7%;

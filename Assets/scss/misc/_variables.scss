@@ -1,9 +1,62 @@
-
-
-
 /* Variables */
 
 
 $principal: black;
 $secondary: white;
+
+@for $w from 1 through 100 {
+    .w-#{$w} {
+        width: 100%/100*$w;
+    };
+    
+}
+
+@for $h from 1 through 100 {
+    .h-#{$h} {
+        height: 100%/100*$h;
+    };
+}
+
+$border:(
+    "": solid,
+    -bottom: solid,
+    -top: solid,
+    -left: solid,
+    -right: solid
+);
+
+@each $location, $values in $border{
+    .border#{$location}-mio{
+        border#{$location}: $values;
+    }
+}
+
+$borders-color:(
+    black: black,
+    grey: rgb(156, 155, 155),
+    red: red
+);
+
+@each $color, $value in $borders-color{
+    .border-#{$color}{
+        border-color: $value;
+    }
+}
+
+$borders-width:(
+    super-small: 0.1cm,
+    s: 0.2cm,
+    m: 0.3cm,
+    big: 0.4cm,
+    xl: 0.5cm,
+    gigant: 1cm,
+);
+
+@each $width, $value in $borders-width{
+    .border-#{$width}{
+        border-width: $value;
+    }
+}
+
+
 
