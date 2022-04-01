@@ -815,7 +815,7 @@ body {
 
 .main {
   width: 100%;
-  font-family: Helvetica;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #faf2ee;
   animation-name: main_background;
@@ -833,7 +833,6 @@ body {
     text-decoration: underline;
     margin-bottom: 1.5cm; }
   .main__enlaces li {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-transform: capitalizes; }
     .main__enlaces li:hover {
       color: #817b7b;
@@ -877,9 +876,9 @@ body {
 footer {
   color: white;
   background-color: black;
-  padding-bottom: 1cm; }
+  padding-bottom: 0.4cm; }
   footer h4 {
-    margin-left: 40.5%; }
+    margin-left: 40%; }
   footer ul li:hover {
     color: #7a7b7c;
     font-weight: bold; }
@@ -1228,7 +1227,7 @@ header {
       border: black 0.1cm solid;
       position: absolute;
       top: 540px;
-      left: 140px; }
+      left: 90px; }
       .main__section__article2 .LMV__nombre h3 {
         font-size: 1.5cm;
         margin: 0%; }
@@ -1237,8 +1236,8 @@ header {
       border: black 0.1cm solid;
       transform: rotate(45deg);
       position: absolute;
-      top: 75px;
-      left: 360px; }
+      top: 83px;
+      left: 338px; }
       .main__section__article2 .LMV__precio h4 {
         margin: 0%;
         font-size: 1.2cm;
@@ -1419,7 +1418,7 @@ header {
       background-size: 187px 286px;
       border-radius: 40px 40px 35px 35px; }
       .main__section__article1 .promo h4 {
-        font-size: 1.2em;
+        font-size: 1em;
         width: 9rem;
         height: 2.3rem;
         padding: 0%;
@@ -1451,21 +1450,25 @@ header {
     .main__section__article2 .LMV__nombre {
       position: absolute;
       top: 22rem;
-      left: 4rem;
-      width: 13rem; }
+      left: 2.7rem;
+      width: 15rem; }
       .main__section__article2 .LMV__nombre h3 {
-        font-size: 3em;
+        font-size: 2.7em;
         margin: 0%; }
     .main__section__article2 .LMV__precio {
       top: 3.8rem;
-      left: 8.1rem;
+      left: 7.69rem;
       transform: rotate(40deg); }
       .main__section__article2 .LMV__precio h4 {
         margin: 0%;
-        font-size: 3em;
+        font-size: 2.7em;
         padding: 0px 70px 0px 70px; } }
 
 @media screen and (max-width: 500px) {
+  .main__title {
+    font-size: 6em; }
+  .main__h2 {
+    font-size: 4.5em; }
   .main__section__article2 .LMV {
     width: 240px;
     height: 22rem; }
@@ -1474,17 +1477,17 @@ header {
       left: -4rem;
       width: 135%; }
     .main__section__article2 .LMV__nombre {
-      top: 16.8rem;
+      top: 16.84rem;
       left: 2rem;
       width: 10rem; }
       .main__section__article2 .LMV__nombre h3 {
-        font-size: 2.3em; }
+        font-size: 2em; }
     .main__section__article2 .LMV__precio {
-      top: 2.83rem;
-      left: 3.7rem;
+      top: 2.86rem;
+      left: 3.58rem;
       transform: rotate(35deg); }
       .main__section__article2 .LMV__precio h4 {
-        font-size: 2.3em;
+        font-size: 2em;
         padding: 0px 60px 0px 60px; } }
 
 /* Termina index y promos_2 */
@@ -1614,7 +1617,7 @@ main .digital__a {
   padding: 0.3cm;
   background-color: white; }
   main .digital__a:hover {
-    padding: 1.3cm;
+    padding: 5%;
     background-color: #cecbcb;
     border-radius: 30%; }
     main .digital__a:hover img {

@@ -22,7 +22,7 @@ body {
 
 .main {
     width: 100%;
-    font-family: Helvetica;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: $secondary;
     animation-name: main_background;
@@ -45,7 +45,6 @@ body {
     }
 
     &__enlaces li {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         text-transform: capitalizes;
         &:hover {
             color: #817b7b;

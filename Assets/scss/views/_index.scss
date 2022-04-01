@@ -246,7 +246,7 @@
                 border: black 0.1cm solid;
                 position: absolute;
                 top: 540px;
-                left: 140px;
+                left: 90px;
 
                 h3 {
                     font-size: 1.5cm;
@@ -259,8 +259,8 @@
                 border: black 0.1cm solid;
                 transform: rotate(45deg);
                 position: absolute;
-                top: 75px;
-                left: 360px;
+                top: 83px;
+                left: 338px;
 
                 h4 {
                     margin: 0%;
@@ -548,7 +548,7 @@
                 border-radius: 40px 40px 35px 35px;
 
                 h4 {
-                    font-size: 1.2em;
+                    font-size: 1em;
                     width: 9rem;
                     height: 2.3rem;
                     padding: 0%;
@@ -596,23 +596,23 @@
                 &__nombre {
                     position: absolute;
                     top: 22rem;
-                    left: 4rem;
-                    width: 13rem;
+                    left: 2.7rem;
+                    width: 15rem;
 
                     h3 {
-                        font-size: 3em;
+                        font-size: 2.7em;
                         margin: 0%;
                     }
                 }
 
                 &__precio {
                     top: 3.8rem;
-                    left: 8.1rem;
+                    left: 7.69rem;
                     transform: rotate(40deg);
 
                     h4 {
                         margin: 0%;
-                        font-size: 3em;
+                        font-size: 2.7em;
                         padding: 0px 70px 0px 70px;
                     }
                 }
@@ -624,6 +624,14 @@
 
 @media screen and (max-width: 500px) {
     .main {
+        &__title{
+            font-size: 6em;
+        }
+
+        &__h2{
+            font-size: 4.5em;
+        }
+
         &__section__article2 {
             .LMV {
                 width: 240px;
@@ -636,22 +644,22 @@
                 }
 
                 &__nombre {
-                    top: 16.8rem;
+                    top: 16.84rem;
                     left: 2rem;
                     width: 10rem;
 
                     h3 {
-                        font-size: 2.3em;
+                        font-size: 2em;
                     }
                 }
 
                 &__precio {
-                    top: 2.83rem;
-                    left: 3.7rem;
+                    top: 2.86rem;
+                    left: 3.58rem;
                     transform: rotate(35deg);
 
                     h4 {
-                        font-size: 2.3em;
+                        font-size: 2em;
                         padding: 0px 60px 0px 60px;
                     }
                 }
