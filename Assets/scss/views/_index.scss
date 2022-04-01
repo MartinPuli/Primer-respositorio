@@ -18,8 +18,13 @@
         margin-bottom: 0.5cm;
         border-bottom: black 0.4cm solid;
         @include disp-flex(column, 4rem, space-evenly);
+        width: 100%;
         border-top: solid 0.05cm white;
         background: rgba(0, 0, 0, 0.500);
+
+        div .container{
+            row-gap: 2cm;
+        }
 
         h3 {
             text-align: center;

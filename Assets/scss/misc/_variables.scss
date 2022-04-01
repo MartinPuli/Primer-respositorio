@@ -2,18 +2,18 @@
 
 
 $principal: black;
-$secondary: white;
+$secondary: rgb(250, 242, 238);
 
 @for $w from 1 through 100 {
     .w-#{$w} {
-        width: 100%/100*$w;
+        width: $w*1%;
     };
     
 }
 
 @for $h from 1 through 100 {
     .h-#{$h} {
-        height: 100%/100*$h;
+        width: #{$h}vw;
     };
 }
 
@@ -34,7 +34,9 @@ $border:(
 $borders-color:(
     black: black,
     grey: rgb(156, 155, 155),
-    red: red
+    red: red,
+    sec: $secondary,
+    prim: $principal
 );
 
 @each $color, $value in $borders-color{
@@ -56,6 +58,12 @@ $borders-width:(
     .border-#{$width}{
         border-width: $value;
     }
+}
+
+@for $g from 1 through 50{
+    .gap-#{$g}mm{
+        gap: $g/10*1cm    
+    };
 }
 
 

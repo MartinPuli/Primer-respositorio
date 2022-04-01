@@ -22,7 +22,7 @@ body {
 
 .main {
     width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Helvetica;
     font-weight: 700;
     color: $secondary;
     animation-name: main_background;
@@ -58,17 +58,17 @@ body {
 /* Animaciones */
 
 @keyframes main_background{
-    0%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}
-    10%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    20%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    30%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    40%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    50%{background-image: linear-gradient(135deg, #584d1a, #80621d, #8f5410, #614b03);}
-    60%{background-image: linear-gradient(99deg, #584d1a, #80621d, #8f5410, #614b03);}
-    70%{background-image: linear-gradient(63deg, #584d1a, #80621d, #8f5410, #614b03);}
-    80%{background-image: linear-gradient(27deg, #584d1a, #80621d, #8f5410, #614b03);}
-    90%{background-image: linear-gradient(-9deg, #584d1a, #80621d, #8f5410, #614b03);}
-    100%{background-image: linear-gradient(-45deg, #584d1a, #80621d, #8f5410, #614b03);}  
+    0%{background-image: linear-gradient(-45deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    10%{background-image: linear-gradient(-9deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    20%{background-image: linear-gradient(27deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    30%{background-image: linear-gradient(63deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    40%{background-image: linear-gradient(99deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    50%{background-image: linear-gradient(135deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    60%{background-image: linear-gradient(99deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    70%{background-image: linear-gradient(63deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    80%{background-image: linear-gradient(27deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    90%{background-image: linear-gradient(-9deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
+    100%{background-image: linear-gradient(-45deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}  
 }
 
 

@@ -1,7 +1,22 @@
 /* Empieza locales */
+main {
+    .h-locals {
+        height: 50vw;
+    }
 
-.h-locals {
-    height: 50vw;
+    .digital__a {
+        padding: 0.3cm;
+        background-color: white;
+        &:hover {
+            padding: 1.3cm;
+            background-color: rgb(206, 203, 203);
+            border-radius: 30%;
+
+            img {
+                border-radius: 30%;
+            }
+        }
+    }
 }
 
 /* Media queries */

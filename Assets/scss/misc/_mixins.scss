@@ -3,12 +3,13 @@
 
 /* Helpers */
 
-@mixin disp-flex ($direction, $gap, $justify: flex-start, $align: flex-start) {
+@mixin disp-flex ($direction, $gap, $justify: flex-start, $align: flex-start, $wrap: nowrap) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-content: $align;
     gap: $gap;
+    flex-wrap: $wrap;
 }
 
 @mixin disp-grid ($columns: 0, $rows: 0, $gap: 0, $justify: flex-start, $align: flex-start) {

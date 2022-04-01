@@ -1,123 +1,163 @@
 /* Empieza header */
 
 header {
-    animation-name: header;
-    animation-duration: 16s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    background-color: black;
 
-    a {
-        text-decoration: none;
-        color: $principal;
-    }
+    nav {
+        @include disp-flex(column, 0cm, center, center);
 
-    ul{
-        
-        li {
-            font-size: 2em;
-            color: $principal;
-            position: relative;
-            padding: 0.12cm;
+        a {
+            text-decoration: none;
+            color: rgb(122, 123, 124);
 
-            &:hover .submenu {
-                display: block;
-                position: absolute;
-            }
-            .borderr {
-                position: absolute;
-                left: 0;
-                background-color: black;
-                transition: transform 0.2s ease-in-out;
-            }
-        
-            .borderr-top{
-                @extend .borderr;
-                width: 100%;
-                height: 4px;
-                transform: scaleX(0);
-                top: 0;
-                transform-origin: top left;
-            }
-        
-            .borderr-bottom{
-                @extend .borderr;
-                width: 100%;
-                height: 4px;
-                transform: scaleX(0);
-                bottom: 0;
-                transform-origin: bottom right;
-            }
-        
-            .borderr-left{
-                @extend .borderr;
-                width: 4px;
-                height: 100%;
-                transform: scaleY(0); 
-                top: 0;
-                transform-origin: bottom left;
-            }
-        
-            .borderr-right{
-                @extend .borderr;
-                width: 4px;
-                height: 100%;
-                transform: scaleY(0); 
-                top: 0;
-                left: auto;
-                right: 0;
-                transform-origin: top right;
-            }
-    
-            &:hover .borderr-bottom{
-                transform: scaleX(1);
-                transition-delay: 0.4s;
-            }
-            &:hover .borderr-top{
-                transform: scaleX(1);
-            }
-            &:hover .borderr-left{
-                transform: scaleY(1);
-                transition-delay: 0.6s;
-            }
-            &:hover .borderr-right{
-                transform: scaleY(1);
-                transition-delay: 0.2s;
+        }
+
+        label {
+            color: #4d4747;
+        }
+
+
+        .header__logo {
+            margin: auto;
+            .MB2 {
+                display: none;
             }
 
             &:hover {
-                border-radius: 10%;
-                font-weight: 900;
-                text-align: center;
-            }
+                width: 9%;
+                .MB {
+                    display: none;
+                }
+                ;
 
-            &:hover a {
-                color: $principal;
-            }
-
-            .submenu {
-                display: none;
-                z-index: 3;
-                background-color: #E5E5E5;
-                transition: all 2s ease-in;
-
-                li {
+                .MB2 {
                     display: block;
-                    font-size: 1.4em;
-                    transition: all 2s ease-in;
-                    height: auto;
-                    text-align: left;
-
-                    &:hover {
-                        background-color: $principal;
-                        border-radius: 0%;
-                        height: auto;
-                    }
-
-                    &:hover a {
-                        color: #E5E5E5;
-                    }
                 }
 
+                ;
+            }
+        }
+
+        ul {
+            @include disp-flex(row, 0cm, space-evenly, center);
+
+            li {
+                font-size: 2em;
+                position: relative;
+                padding: 0.12cm;
+
+                &:first-of-type,
+                &:last-of-type{
+                transform: translateY(-50%);
+            }
+
+                &:hover .submenu {
+                    display: block;
+                    position: absolute;
+                }
+
+                .borderr {
+                    position: absolute;
+                    left: 0;
+                    background-color: rgb(255, 255, 255);
+                    transition: transform 0.2s ease-in-out;
+                }
+
+                .borderr-top {
+                    @extend .borderr;
+                    width: 100%;
+                    height: 4px;
+                    transform: scaleX(0);
+                    top: 0;
+                    transform-origin: top left;
+                }
+
+                .borderr-bottom {
+                    @extend .borderr;
+                    width: 100%;
+                    height: 4px;
+                    transform: scaleX(0);
+                    bottom: 0;
+                    transform-origin: bottom right;
+                }
+
+                .borderr-left {
+                    @extend .borderr;
+                    width: 4px;
+                    height: 100%;
+                    transform: scaleY(0);
+                    top: 0;
+                    transform-origin: bottom left;
+                }
+
+                .borderr-right {
+                    @extend .borderr;
+                    width: 4px;
+                    height: 100%;
+                    transform: scaleY(0);
+                    top: 0;
+                    left: auto;
+                    right: 0;
+                    transform-origin: top right;
+                }
+
+                &:hover .borderr-bottom {
+                    transform: scaleX(1);
+                    transition-delay: 0.4s;
+                }
+
+                &:hover .borderr-top {
+                    transform: scaleX(1);
+                }
+
+                &:hover .borderr-left {
+                    transform: scaleY(1);
+                    transition-delay: 0.6s;
+                }
+
+                &:hover .borderr-right {
+                    transform: scaleY(1);
+                    transition-delay: 0.2s;
+                }
+
+                &:hover {
+                    border-radius: 10%;
+                    font-weight: 900;
+                    text-align: center;
+                }
+
+                &:hover a {
+                    color: white;
+                }
+
+                .submenu {
+                    display: none;
+                    z-index: 3;
+                    background-color: $principal;
+                    color: $secondary;
+                    transition: all 2s ease-in;
+                    width: auto;
+
+                    li {
+                        display: block;
+                        font-size: 1em;
+                        transition: all 2s ease-in;
+                        height: auto;
+                        text-align: left;
+                        transform: translateY(0%);
+
+                        &:hover {
+                            background-color: $secondary;
+                            border-radius: 0%;
+                            height: auto;
+                        }
+
+                        &:hover a {
+                            color: $principal;
+                        }
+                    }
+
+                }
             }
         }
     }
@@ -177,8 +217,11 @@ header {
 
 
 @media screen and (max-width: 720px) {
-    header ul li {
-        font-size: 2.5vw;
+    header ul li a{
+        font-size: 13px;
+    }
+    header ul li label{
+        font-size: 13px;
     }
 }
 
