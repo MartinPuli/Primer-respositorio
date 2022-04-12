@@ -11,10 +11,12 @@
         .card {
             width: 21rem;
             border-radius: 10%;
-            margin: auto;
+            margin-left: auto;
+            margin-right: auto;
 
             img {
-                height: 14rem;
+                height: 224px;
+                width: 80%;
             }
 
             h5 {

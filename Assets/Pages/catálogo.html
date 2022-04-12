@@ -5,39 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El catálogo de la mejor hamburguesería de la Argentina, MAXPLI burguers, donde se incluyen sus hambuguesas, sus papas fritas y su menu infantil">
-    <meta name="keywords" content="Burguers Hamburguesas Maxpli Hamburguesería Cheddar Bacon Lechuga Tomate Huevo Pan Papas Fritas Panchos Menu Infantil Familiar Riquisimo Gaseosas Enlaces Instagram Facebok Mail">
+    <meta name="description"
+        content="El catálogo de la mejor hamburguesería de la Argentina, MAXPLI burguers, donde se incluyen sus hambuguesas, sus papas fritas y su menu infantil">
+    <meta name="keywords"
+        content="Burguers Hamburguesas Maxpli Hamburguesería Cheddar Bacon Lechuga Tomate Huevo Pan Papas Fritas Panchos Menu Infantil Familiar Riquisimo Gaseosas Enlaces Instagram Facebok Mail">
     <meta name="author" content="Martin Ezequiel Pulitano">
     <title>MAXPLI - catálogo</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
-        </style>
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../../Assets/css/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Assets/CSS/magic.css">
     <link rel="shortcut icon" href="../Images/logo.JPG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fbb2ca6f52.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" id="top">
 
     <!-- Empieza header -->
     <header class="container-fluid p-0 m-0 h-auto">
         <nav class="text-decoration-none w-100 gap-0">
-            <a href="../../index.html" class="header__logo w-9 text-center my-0 py-0">
+            <a href="../../index.html" class="header__logo w-9 text-center my-0 py-0 puffIn">
                 <img src="../Images/MB.JPG" alt="Logo" class="MB w-100 ">
                 <img src="../Images/MB2.JPG" alt="Logo" class="MB2 w-100 ">
             </a>
             <ul class="menu m-auto w-100 list-unstyled fw-bold my-0 pb-2">
-                <li><a href="../../index.html">Inicio
+                <li class="tinLeftIn menu__1"><a href="../../index.html">Inicio
                         <span class="borderr-top"></span>
                         <span class="borderr-right"></span>
                         <span class="borderr-bottom"></span>
                         <span class="borderr-left"></span>
                     </a></li>
-                <li>
+                <li class="tinLeftIn menu__2">
                     <div><label>Catálogo</label></div>
                 </li>
-                <li>
+                <li class="tinUpIn menu__3">
                     <div><a href="./nosotros.html">Nosotros
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
@@ -45,30 +51,24 @@
                             <span class="borderr-left"></span>
                         </a></div>
                     <ul class="submenu m-0 p-0 border-mio border-s border-sec h-auto w-auto">
-                        <li class="border-bottom-mio border-s border-sec py-2 px-1"><a href="./nosotros.html#1">Historia</a></li>
-                        <li class="border-bottom-mio border-s border-sec py-2 px-1"><a href="./nosotros.html#2">Logo</a></li>
+                        <li class="border-bottom-mio border-s border-sec py-2 px-1"><a
+                                href="./nosotros.html#1">Historia</a></li>
+                        <li class="border-bottom-mio border-s border-sec py-2 px-1"><a href="./nosotros.html#2">Logo</a>
+                        </li>
                         <li class="border-bottom-mio border-s border-sec py-2 px-1"><a
                                 href="./nosotros.html#3">Ingredientes</a></li>
                         <li class="py-2 px-1"> <a href="./nosotros.html#4">Preparación</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="tinRightIn menu__4">
                     <div><a href="./locales.html">Locales
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
                             <span class="borderr-bottom"></span>
                             <span class="borderr-left"></span>
                         </a></div>
-                    <ul class="submenu m-0 p-0 border-mio border-s border-sec h-auto w-auto">
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a href="./locales.html#a">CABA</a>
-                        </li>
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a href="./locales.html#b">PBA</a></li>
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a href="./locales.html#c">Córdoba</a>
-                        </li>
-                        <li class="py-2 px-3"><a href="./locales.html#d">Online</a></li>
-                    </ul>
                 </li>
-                <li>
+                <li class="tinRightIn menu__5">
                     <div><a href="./redes.html">Redes
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
@@ -90,7 +90,7 @@
         <!-- Empieza el catalogo -->
         <section class="main__catalogo mt-5 d-flex flex-column gap-25mm bg-black bg-opacity-25 w-100 py-5">
             <div class="d-flex flex-row mx-auto gap-25mm flex-wrap">
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>La aburrida</h3>
@@ -102,9 +102,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
-                        <div class="item__div1">
+                        <div class="item__div1" dat-aos="fade-down">
                             <h3>Simple y cheddar</h3>
                         </div>
                         <img src="../Images/Catalogo/2.png">
@@ -115,8 +115,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Completa</h3>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>La Kissa</h3>
@@ -141,8 +141,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Doble completa</h3>
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Doble con queso</h3>
@@ -167,8 +167,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Super cheddar</h3>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>La Marquesina</h3>
@@ -193,8 +193,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>La Mostachona</h3>
@@ -206,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Completa triple</h3>
@@ -219,20 +219,20 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Super bacon</h3>
                         </div>
                         <img src="../Images/Catalogo/11.png">
-                        <p>Deliciosa, o te moris de ganas o de colesterol, sin punto intermedio</p>
+                        <p>Deliciosa, o mueres de ganas o de colesterol, no hay otra</p>
                         <div class="item__div2">
                             <h4>$1300</h4>
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>La Mustaquio</h3>
@@ -245,8 +245,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Veggie boom</h3>
@@ -258,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Vegana simple</h3>
@@ -271,8 +271,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Papas fritas</h3>
@@ -284,21 +284,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Papas cheddar</h3>
                         </div>
                         <img src="../Images/promo_7_and_8.png">
-                        <p>Nuestras famosas papas fritas con MUCHO cheddar, aca no se miente</p>
+                        <p>Nuestras famosas papas fritas con MUCHO cheddar</p>
                         <div class="item__div2">
                             <h4>$400</h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Papas bacon</h3>
@@ -310,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Super pancho</h3>
@@ -323,8 +323,8 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row gap-25mm mx-auto flex-wrap">
-                <div class="mx-auto">
+            <div class="d-flex flex-row mx-auto gap-25mm flex-wrap section__line">
+                <div class="mx-auto" data-aos="fade-down-right">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Nugets</h3>
@@ -336,7 +336,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-down-left">
                     <div class="catalogo__item">
                         <div class="item__div1">
                             <h3>Ensalada Caesar </h3>
@@ -356,25 +356,47 @@
     <!-- Termina main -->
 
     <!-- Empieza footer -->
-    <footer class="d-flex flex-column bg-black">
-        <h4 class="text-white h4 my-4">MAXPLI BURGUERS</h4>
-        <ul class="d-flex flex-sm-row flex-column justify-content-evenly gap-3 text-white list-unstyled mx-2">
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Instagram.png">
-                <h6 class="h6 d-inline-block">MAXPLIok</h6>
-            </li>
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Gmail.png">
-                <h6 class="h6 d-inline-block">MAXPLIburguers@gmail.com</h6>
-            </li>
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Facebook.png">
-                <h6 class="h6 d-inline-block">MAXPLIburguers</h6>
-            </li>
-        </ul>
-        <br>
+    <footer class="d-flex flex-column">
+        <div class="bg-black text-white d-flex flex-column gap-3 py-5">
+            <a class="w-auto mx-auto" href="#top"><i
+                    class="fa-solid fa-circle-chevron-up text-white display-2"></i></a>
+            <h4 class="h4 my-4 mx-auto">MAXPLI BURGUERS</h4>
+            <div class="mx-auto d-flex flex-row gap-3">
+                <a class="w-auto" href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook h5 text-white"></i></a>
+                <a class="w-auto" href="https://web.whatsapp.com/"><i
+                        class="fa-brands fa-whatsapp h5 text-white"></i></a>
+                <a class="w-auto" href="https://twitter.com/"><i class="fa-brands fa-twitter h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.gmail.com/"><i class="fa-solid fa-at h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram h5 text-white"></i></a>
+            </div>
+        </div>
+        <div class="footer-ft pt-4">
+            <div class="d-flex flex-row justify-content-center pt-2">
+                <a class="w-auto" href="../../index.html"><i class="h6 fa-solid fa-house text-black"></i></a>
+                <h6>.</h6>
+                <a class="w-auto" href="../Pages/catálogo.html"><i class="h6 fa-solid fa-burger text-black"></i></a>
+                <h6>.</h6>
+                <a class="w-auto" href="../Pages/nosotros.html"><i
+                        class="h6 fa-solid fa-circle-info text-black"></i></a>
+                        <h6>.</h6>
+                <a class="w-auto" href="../Pages/locales.html"><i
+                        class="h6 fa-solid fa-location-dot text-black"></i></a>
+                        <h6>.</h6>
+                <a class="w-auto" href="../Pages/redes.html"><i class="h6 text-black fa-solid fa-address-card"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- Termina footer -->
+
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="../../Assets/Js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

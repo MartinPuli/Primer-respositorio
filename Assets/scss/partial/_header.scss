@@ -1,7 +1,7 @@
 /* Empieza header */
 
 header {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 
     nav {
         @include disp-flex(column, 0cm, center, center);
@@ -12,22 +12,25 @@ header {
 
         }
 
-        label {
-            color: #4d4747;
-        }
 
 
         .header__logo {
             margin: auto;
+            animation-duration: 0.8s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+
             .MB2 {
                 display: none;
             }
 
             &:hover {
                 width: 9%;
+
                 .MB {
                     display: none;
                 }
+
                 ;
 
                 .MB2 {
@@ -41,15 +44,39 @@ header {
         ul {
             @include disp-flex(row, 0cm, space-evenly, center);
 
+            .menu__animation {
+                animation-iteration-count: 1;
+            }
+
+            .menu__1,
+            .menu__5 {
+                @extend .menu__animation;
+                animation-duration: 2s;
+                position: relative;
+                top: -20px;
+            }
+
+            .menu__2,
+            .menu__4 {
+                animation-duration: 5s;
+                @extend .menu__animation;
+                position: relative;
+                top: -5px;
+            }
+
+            .menu__3 {
+                @extend .menu__animation;
+                animation-duration: 6s;
+            }
+
+            label {
+                color: #4d4747;
+            }
+
             li {
                 font-size: 2em;
-                position: relative;
                 padding: 0.12cm;
-
-                &:first-of-type,
-                &:last-of-type{
-                transform: translateY(-50%);
-            }
+                position: relative;
 
                 &:hover .submenu {
                     display: block;
@@ -156,7 +183,6 @@ header {
                             color: $principal;
                         }
                     }
-
                 }
             }
         }
@@ -166,61 +192,25 @@ header {
 
 /* Animaciones */
 
-@keyframes header {
+@keyframes d-yes {
     0% {
-        background-color: #E5E5E5;
-    }
-
-    10% {
-        background-color: #e6bfbf;
-    }
-
-    20% {
-        background-color: #e4cacaf6;
-    }
-
-    25% {
-        background-color: #ebecec;
-    }
-
-    35% {
-        background-color: #c5dbdbb4;
-    }
-
-    50% {
-        background-color: #f7e1e1e1;
-    }
-
-    60% {
-        background-color: #f5d8d8ed;
-    }
-
-    70% {
-        background-color: #e4e0e0ea;
-    }
-
-    80% {
-        background-color: #cac7c7ec;
-    }
-
-    90% {
-        background-color: #d4c0c0ec;
+        display: block;
     }
 
     100% {
-        background-color: #E5E5E5;
+        display: block;
     }
 }
-
 
 /* Media queries */
 
 
 @media screen and (max-width: 720px) {
-    header ul li a{
+    header ul li a {
         font-size: 13px;
     }
-    header ul li label{
+
+    header ul li label {
         font-size: 13px;
     }
 }

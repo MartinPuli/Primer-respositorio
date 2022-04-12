@@ -18,9 +18,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="shortcut icon" href="../Images/logo.JPG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fbb2ca6f52.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" id="top">
     <!-- Empieza header -->
     <header class="container-fluid p-0 m-0 h-auto">
         <nav class="text-decoration-none w-100 gap-0">
@@ -29,8 +30,8 @@
                 <img src="../Images/MB2.JPG" alt="Logo" class="MB2 w-100 ">
             </a>
             <ul class="menu m-auto w-100 list-unstyled fw-bold my-0 pb-2">
-                <li><label>Inicio</label></li>
-                <li>
+                <li class="tinLeftIn menu__1"><label>Inicio</label></li>
+                <li class="tinLeftIn menu__2">
                     <div><a href="./catálogo.html">Catálogo
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
@@ -38,7 +39,7 @@
                             <span class="borderr-left"></span>
                         </a></div>
                 </li>
-                <li>
+                <li class="tinUpIn menu__3">
                     <div><a href="./nosotros.html">Nosotros
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
@@ -55,25 +56,15 @@
                         <li class="py-2 px-1"> <a href="./nosotros.html#4">Preparación</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="tinRightIn menu__4">
                     <div><a href="./locales.html">Locales
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
                             <span class="borderr-bottom"></span>
                             <span class="borderr-left"></span>
                         </a></div>
-                    <ul class="submenu m-0 p-0 border-mio border-s border-sec h-auto w-auto">
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a href="./locales.html#a">CABA</a>
-                        </li>
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a href="./locales.html#b">PBA</a>
-                        </li>
-                        <li class="border-bottom-mio border-s border-sec py-2 px-3"><a
-                                href="./locales.html#c">Córdoba</a>
-                        </li>
-                        <li class="py-2 px-3"><a href="./locales.html#d">Online</a></li>
-                    </ul>
                 </li>
-                <li>
+                <li class="tinRightIn menu__5">
                     <div><a href="./redes.html">Redes
                             <span class="borderr-top"></span>
                             <span class="borderr-right"></span>
@@ -90,13 +81,14 @@
     <main class="main text-center">
         <h1 class="main__title fw-bold text-decoration-underline mb-5 p-5">MAXPLI Burguers</h1>
         <h2 class="main__h2 fw-bold my-5 p-2">¿Te lo vas a perder?</h2>
-        <img class="w-40 h-auto m-auto" src="../Images/logo.JPG">
+        <img class="main__img w-40 h-auto m-auto" src="../Images/logo.JPG">
+        <div class="main__line mb-5"></div>
         <section>
             <h2 id="promos2" class="main__h2 fw-bold my-5 p-2">¡PROMOS 100% CASERAS!</h2>
-            <article class=" main__section__article1 d-flex flex-column justify-content-center">
-                <div class="d-flex flex-column gap-5 my-5 mx-auto text-center">
+            <article class=" main__section__article1">
+                <div class="d-flex flex-column w-100 gap-25mm my-5 mx-auto text-center">
                     <!-- Empiezan promos -->
-                    <div class="container d-flex flex-row flex-wrap gap-5 mx-auto justify-content-center">
+                    <div class="container d-flex flex-row flex-wrap justify-content-evenly mx-auto">
                         <div>
                             <div class="promo7_and_8 promo7">
                                 <div class="promo border-5 border border-dark">
@@ -126,7 +118,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container d-flex flex-row flex-wrap gap-5 mx-auto justify-content-center">
+                    <div class="container d-flex flex-row flex-wrap justify-content-evenly mx-auto">
                         <div>
                             <div class="promo9">
                                 <div class="promo border-5 border border-dark">
@@ -156,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container d-flex flex-row flex-wrap gap-5 mx-auto justify-content-center">
+                    <div class="container d-flex flex-row flex-wrap justify-content-evenly mx-auto">
                         <div>
                             <div class="promo11">
                                 <div class="promo border-5 border border-dark">
@@ -227,23 +219,38 @@
     <!-- Termina main -->
 
     <!-- Empieza footer -->
-    <footer class="d-flex flex-column bg-black">
-        <h4 class="text-white h4 my-4">MAXPLI BURGUERS</h4>
-        <ul class="d-flex flex-sm-row flex-column justify-content-evenly gap-3 text-white list-unstyled mx-2">
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Instagram.png">
-                <h6 class="h6 d-inline-block">MAXPLIok</h6>
-            </li>
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Gmail.png">
-                <h6 class="h6 d-inline-block">MAXPLIburguers@gmail.com</h6>
-            </li>
-            <li>
-                <img class="img-fluid d-inline-block" src="../Images/Facebook.png">
-                <h6 class="h6 d-inline-block">MAXPLIburguers</h6>
-            </li>
-        </ul>
-        <br>
+    <footer class="d-flex flex-column">
+        <div class="bg-black text-white d-flex flex-column gap-3 py-5">
+            <a class="w-auto mx-auto" href="#top"><i
+                    class="fa-solid fa-circle-chevron-up text-white display-2"></i></a>
+            <h4 class="h4 my-4 mx-auto">MAXPLI BURGUERS</h4>
+            <div class="mx-auto d-flex flex-row gap-3">
+                <a class="w-auto" href="https://www.facebook.com/"><i
+                        class="fa-brands fa-facebook h5 text-white"></i></a>
+                <a class="w-auto" href="https://web.whatsapp.com/"><i
+                        class="fa-brands fa-whatsapp h5 text-white"></i></a>
+                <a class="w-auto" href="https://twitter.com/"><i class="fa-brands fa-twitter h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.gmail.com/"><i class="fa-solid fa-at h5 text-white"></i></a>
+                <a class="w-auto" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram h5 text-white"></i></a>
+            </div>
+        </div>
+        <div class="footer-ft pt-4">
+            <div class="d-flex flex-row justify-content-center pt-2">
+                <a class="w-auto" href="../../index.html"><i class="h6 fa-solid fa-house text-black"></i></a>
+                <h6>.</h6>
+                <a class="w-auto" href="../Pages/catálogo.html"><i class="h6 fa-solid fa-burger text-black"></i></a>
+                <h6>.</h6>
+                <a class="w-auto" href="../Pages/nosotros.html"><i
+                        class="h6 fa-solid fa-circle-info text-black"></i></a>
+                        <h6>.</h6>
+                <a class="w-auto" href="../Pages/locales.html"><i
+                        class="h6 fa-solid fa-location-dot text-black"></i></a>
+                        <h6>.</h6>
+                <a class="w-auto" href="../Pages/redes.html"><i class="h6 text-black fa-solid fa-address-card"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- Termina footer -->
 

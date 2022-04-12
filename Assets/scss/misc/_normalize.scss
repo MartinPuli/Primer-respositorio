@@ -1,6 +1,3 @@
-
-
-
 /* Empieza normalize */
 
 *,
@@ -18,19 +15,22 @@ body {
     height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
+    animation: animation__body 2000ms linear 1 both;
+
 }
 
 .main {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     color: $secondary;
     animation-name: main_background;
     animation-duration: 16s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    background: fixed;
 
-    a{ 
+    a {
         color: $secondary;
         text-decoration: none;
     }
@@ -45,43 +45,120 @@ body {
     }
 
     &__enlaces li {
+        width: auto;
         text-transform: capitalizes;
-        &:hover {
-            color: #817b7b;
-            background-color: #00000036;
+        a{
+            width: auto;
+            
+                    &:hover {
+                        color: #817b7b;
+                        background-color: #00000036;
+                    }
         }
     }
-    
 }
 
 /* Animaciones */
 
-@keyframes main_background{
-    0%{background-image: linear-gradient(-45deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    10%{background-image: linear-gradient(-9deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    20%{background-image: linear-gradient(27deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    30%{background-image: linear-gradient(63deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    40%{background-image: linear-gradient(99deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    50%{background-image: linear-gradient(135deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    60%{background-image: linear-gradient(99deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    70%{background-image: linear-gradient(63deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    80%{background-image: linear-gradient(27deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    90%{background-image: linear-gradient(-9deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}
-    100%{background-image: linear-gradient(-45deg, rgb(251, 155, 0), rgb(209, 133, 10), #a07d0c, #d69600);}  
-}
+@keyframes main_background {
+    0% {
+        background: linear-gradient(-45deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
 
+    10% {
+        background: linear-gradient(-9deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    20% {
+        background: linear-gradient(27deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    30% {
+        background: linear-gradient(63deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    40% {
+        background: linear-gradient(99deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    50% {
+        background: linear-gradient(135deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    60% {
+        background: linear-gradient(99deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    70% {
+        background: linear-gradient(63deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    80% {
+        background: linear-gradient(27deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    90% {
+        background: linear-gradient(-9deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+
+    100% {
+        background: linear-gradient(-45deg,
+                rgb(251, 155, 0),
+                rgb(209, 133, 10),
+                #a07d0c,
+                #d69600);
+    }
+}
 
 
 /* Media queries */
 
 @media screen and (max-width: 720px) {
-
     .main__titles {
         font-size: 4em;
         margin-bottom: 0.5cm;
         padding-top: 1%;
     }
 }
-
 
 /* Termina normalize */

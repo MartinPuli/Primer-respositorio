@@ -1,12 +1,106 @@
 /* Empieza locales */
+
+.modal-body {
+    iframe {
+        height: 26vw;
+    }
+}
+
 main {
     .h-locals {
         height: 50vw;
+    }
+    .section-locales {
+        padding: 10%;
+
+        .locales__button1 {
+            transform: translateX(-25%);
+        }
+
+        .locales__button2 {
+            transform: translateX(25%);
+        }
+
+
+        .charcas{
+            background-image: url(../Images/charcas.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .mendoza{
+            background-image: url(../Images/mendoza.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .iriarte{
+            background-image: url(../Images/iriarte.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .moreno {
+            background-image: url(../Images/moreno.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .laplata {
+            background-image: url(../Images/laplata.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .cordoba {
+            background-image: url(../Images/cordoba.jpg);
+            background-size: cover;
+            height: 60vw;
+        }
+
+        .locales {
+            font-weight: bold;
+            color: white;
+            margin: auto auto;
+            border-radius: 20%;
+
+            &__hover {
+                display: none;
+            }
+            
+
+            &:hover {
+                .locales__hover {
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 20%;
+                    @include disp-flex(column, 10%, center, center);
+
+                    &__btn {
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 0.6cm;
+                        color: white;
+                        border: 0.2cm white solid;
+                        background-color: transparent;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.073);
+                            transform: scale(1.2);
+                        }
+                    }
+
+                }
+            }
+        }
+
+
     }
 
     .digital__a {
         padding: 0.3cm;
         background-color: white;
+
         &:hover {
             padding: 5%;
             background-color: rgb(206, 203, 203);
@@ -23,7 +117,7 @@ main {
 
 @media screen and (max-width: 1023px) {
 
-    .locals {
+    .locales {
         h2 {
             font-size: 1.2cm;
         }
@@ -34,4 +128,22 @@ main {
     }
 }
 
+@media screen and (max-width: 720px) {
+
+    .locales {
+        h2 {
+            font-size: 4vw;
+        }
+
+        h3 {
+            font-size: 3.5vw;
+        }
+    }
+}
+@media screen and (max-width: 390px) {
+
+    #d h2{
+        font-size: 0.9cm;
+    }
+}
 /* Termina locales */

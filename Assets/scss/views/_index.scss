@@ -126,6 +126,10 @@
             animation-timing-function: linear;
             animation-iteration-count: infinite;
 
+            &:hover{
+                transform: scale(1.15);
+            }
+
             &__grid {
                 h4 {
                     background-color: red;
@@ -451,7 +455,6 @@
     }
 }
 
-
 @media screen and (max-width: 720px) {
 
     .main {
@@ -584,6 +587,10 @@
                 border-radius: 15% 15% 15% 15%;
                 margin: auto;
                 margin-bottom: 1cm;
+
+                &:hover{
+                    transform: scale(1.15);
+                }
 
                 img {
                     position: absolute;
