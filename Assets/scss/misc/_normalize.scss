@@ -30,6 +30,13 @@ body {
     animation-iteration-count: infinite;
     background: fixed;
 
+    .background{
+        height: 100%;
+        width: 100%;
+        background-image: url(../Images/Background.jpg);
+        animation: background-move 100s linear infinite;
+    }
+
     a {
         color: $secondary;
         text-decoration: none;
@@ -148,6 +155,13 @@ body {
                 #a07d0c,
                 #d69600);
     }
+}
+
+@keyframes background-move {
+    100% {
+        background-position: 3000px 0px;
+    }
+    
 }
 
 

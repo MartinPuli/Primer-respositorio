@@ -824,6 +824,11 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background: fixed; }
+  .main .background {
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/Background.jpg);
+    animation: background-move 100s linear infinite; }
   .main a {
     color: #faf2ee;
     text-decoration: none; }
@@ -867,6 +872,10 @@ body {
     background: linear-gradient(-9deg, #fb9b00, #d1850a, #a07d0c, #d69600); }
   100% {
     background: linear-gradient(-45deg, #fb9b00, #d1850a, #a07d0c, #d69600); } }
+
+@keyframes background-move {
+  100% {
+    background-position: 3000px 0px; } }
 
 /* Media queries */
 @media screen and (max-width: 720px) {
