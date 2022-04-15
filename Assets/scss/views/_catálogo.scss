@@ -1,71 +1,56 @@
 /* Empieza catalogo */
 
 .main__catalogo {
-  border-top: rgb(0, 0, 0) solid 0.4cm;
-  background-image: url(../Images/15210410795.png);
-  background-repeat: repeat;
-  background-size: 40%;
+  padding: 0%;
 
-  img {
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 250px;
-    height: 170px;
-  }
+  .div-row-cat {
+    display: flex;
+    flex-direction: row;
 
-  p {
-    text-align: justify;
-    font-size: 2em;
-    width: 90%;
-    margin: auto;
-    border: white solid 0.1cm;
-    margin-bottom: 0.5cm;
-  }
+    .div-w-cat {
+      width: 50%;
 
-  .catalogo__item {
-    background-image: linear-gradient(
-      58deg,
-      rgb(207, 109, 63),
-      rgb(194, 112, 44)
-    );
-    border-radius: 10%;
-    border: black solid 0.3cm;
-    width: 420px;
-    height: 500px;
-    padding-left: 0%;
-    margin: auto;
 
-    &:hover{
-        transform: scale(1.15);
-    }
 
-    .item__div1 {
-      font-size: 0.8cm;
-      color: $secondary;
-      font-weight: bold;
-      text-align: center;
-      width: 100%;
-      background-color: #443b20ec;
-      border-top: black solid 0.3cm;
-      border-bottom: black solid 0.3cm;
-      margin-top: 0.9cm;
-      margin-left: 0%;
-      padding-left: 0%;
-    }
+      .gap-cat {
+        gap: 25%;
+      }
 
-    .item__div2 {
-      font-size: 1.5cm;
-      color: $secondary;
-      font-weight: bold;
-      text-align: center;
-      width: 100%;
-      background-color: #443b20ec;
-      border-top: black solid 0.3cm;
-      border-bottom: black solid 0.3cm;
-      margin-top: 0.3cm;
-      line-height: 1.6cm;
-      animation: precio_catalogo 1s linear infinite;
+      img {
+        width: 62%;
+        height: 300px;
+        position: relative;
+        left: -6.5%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .precio {
+        animation: precio_catalogo 1s linear infinite;
+        text-align: right;
+      }
+
+      .mover {
+        margin-left: 20%;
+      }
+
+      .dcq {
+        width: 40%;
+        margin-left: 35%;
+      }
+
+      .main__catalogo__info {
+        justify-content: flex-start;
+
+
+        &__line {
+          height: 0.2rem;
+          background-color: white;
+        }
+
+        text-align: left;
+      }
+
     }
   }
 }
@@ -93,43 +78,70 @@
 
 /* Media queries */
 
+@media screen and (max-width: 1023px) {
+  .main__catalogo {
+    .div-row-cat {
+      flex-direction: column;
+
+      .div-w-cat {
+        width: 100%;
+
+        .mover {
+          margin-left: 33%;
+        }
+
+        .dcq {
+          margin-left: 33%;
+        }
+
+        img {
+          margin-left: 33%;
+          height: 34vw;
+          width: 44vw;
+        }
+
+      }
+    }
+  }
+
+}
+
 @media screen and (max-width: 720px) {
   .main__catalogo {
-    row-gap: 4rem;
+    .div-row-cat {
+      .div-w-cat {
 
-    div {
-      row-gap: 4rem;
-    }
+        .main__catalogo__info {
+          h5 {
+            font-size: 0.4cm;
+          }
 
-    img {
-      margin-left: 2.8rem;
-      margin-top: 0.2cm;
-      width: 140px;
-      height: 120px;
-    }
+        }
 
-    p {
-      font-size: 0.9em;
-      margin-bottom: 0.2cm;
-    }
-
-    .catalogo__item {
-      border-radius: 8%;
-      width: 250px;
-      height: 340px;
-      padding-top: 0%;
-
-      .item__div1 {
-        margin-top: 6%;
-        font-size: 1.7em;
-        margin-bottom: 0rem;
+        .precio {
+          font-size: 0.4cm;
+        }
       }
+    }
+  }
+}
 
-      .item__div2 {
-        font-size: 2.2em;
-        width: 100%;
-        margin-top: 0.7rem;
-        line-height: 1.3rem;
+@media screen and (max-width: 520px) {
+  .main__catalogo {
+    .div-row-cat {
+      .div-w-cat {
+
+
+        .main__catalogo__info {
+          h5 {
+            font-size: 0.3cm;
+          }
+        }
+
+        .precio {
+          font-size: 0.3cm;
+          text-align: right;
+        }
       }
     }
   }

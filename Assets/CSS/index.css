@@ -1539,57 +1539,35 @@ header {
 /* Termina index y promos_2 */
 /* Empieza catalogo */
 .main__catalogo {
-  border-top: black solid 0.4cm;
-  background-image: url(../Images/15210410795.png);
-  background-repeat: repeat;
-  background-size: 40%; }
-  .main__catalogo img {
-    margin-left: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 250px;
-    height: 170px; }
-  .main__catalogo p {
-    text-align: justify;
-    font-size: 2em;
-    width: 90%;
-    margin: auto;
-    border: white solid 0.1cm;
-    margin-bottom: 0.5cm; }
-  .main__catalogo .catalogo__item {
-    background-image: linear-gradient(58deg, #cf6d3f, #c2702c);
-    border-radius: 10%;
-    border: black solid 0.3cm;
-    width: 420px;
-    height: 500px;
-    padding-left: 0%;
-    margin: auto; }
-    .main__catalogo .catalogo__item:hover {
-      transform: scale(1.15); }
-    .main__catalogo .catalogo__item .item__div1 {
-      font-size: 0.8cm;
-      color: #faf2ee;
-      font-weight: bold;
-      text-align: center;
-      width: 100%;
-      background-color: #443b20ec;
-      border-top: black solid 0.3cm;
-      border-bottom: black solid 0.3cm;
-      margin-top: 0.9cm;
-      margin-left: 0%;
-      padding-left: 0%; }
-    .main__catalogo .catalogo__item .item__div2 {
-      font-size: 1.5cm;
-      color: #faf2ee;
-      font-weight: bold;
-      text-align: center;
-      width: 100%;
-      background-color: #443b20ec;
-      border-top: black solid 0.3cm;
-      border-bottom: black solid 0.3cm;
-      margin-top: 0.3cm;
-      line-height: 1.6cm;
-      animation: precio_catalogo 1s linear infinite; }
+  padding: 0%; }
+  .main__catalogo .div-row-cat {
+    display: flex;
+    flex-direction: row; }
+    .main__catalogo .div-row-cat .div-w-cat {
+      width: 50%; }
+      .main__catalogo .div-row-cat .div-w-cat .gap-cat {
+        gap: 25%; }
+      .main__catalogo .div-row-cat .div-w-cat img {
+        width: 62%;
+        height: 300px;
+        position: relative;
+        left: -6.5%;
+        margin-left: auto;
+        margin-right: auto; }
+      .main__catalogo .div-row-cat .div-w-cat .precio {
+        animation: precio_catalogo 1s linear infinite;
+        text-align: right; }
+      .main__catalogo .div-row-cat .div-w-cat .mover {
+        margin-left: 20%; }
+      .main__catalogo .div-row-cat .div-w-cat .dcq {
+        width: 40%;
+        margin-left: 35%; }
+      .main__catalogo .div-row-cat .div-w-cat .main__catalogo__info {
+        justify-content: flex-start;
+        text-align: left; }
+        .main__catalogo .div-row-cat .div-w-cat .main__catalogo__info__line {
+          height: 0.2rem;
+          background-color: white; }
 
 /* Animaciones */
 @keyframes precio_catalogo {
@@ -1603,33 +1581,32 @@ header {
     color: #ffffff; } }
 
 /* Media queries */
+@media screen and (max-width: 1023px) {
+  .main__catalogo .div-row-cat {
+    flex-direction: column; }
+    .main__catalogo .div-row-cat .div-w-cat {
+      width: 100%; }
+      .main__catalogo .div-row-cat .div-w-cat .mover {
+        margin-left: 33%; }
+      .main__catalogo .div-row-cat .div-w-cat .dcq {
+        margin-left: 33%; }
+      .main__catalogo .div-row-cat .div-w-cat img {
+        margin-left: 33%;
+        height: 34vw;
+        width: 44vw; } }
+
 @media screen and (max-width: 720px) {
-  .main__catalogo {
-    row-gap: 4rem; }
-    .main__catalogo div {
-      row-gap: 4rem; }
-    .main__catalogo img {
-      margin-left: 2.8rem;
-      margin-top: 0.2cm;
-      width: 140px;
-      height: 120px; }
-    .main__catalogo p {
-      font-size: 0.9em;
-      margin-bottom: 0.2cm; }
-    .main__catalogo .catalogo__item {
-      border-radius: 8%;
-      width: 250px;
-      height: 340px;
-      padding-top: 0%; }
-      .main__catalogo .catalogo__item .item__div1 {
-        margin-top: 6%;
-        font-size: 1.7em;
-        margin-bottom: 0rem; }
-      .main__catalogo .catalogo__item .item__div2 {
-        font-size: 2.2em;
-        width: 100%;
-        margin-top: 0.7rem;
-        line-height: 1.3rem; } }
+  .main__catalogo .div-row-cat .div-w-cat .main__catalogo__info h5 {
+    font-size: 0.4cm; }
+  .main__catalogo .div-row-cat .div-w-cat .precio {
+    font-size: 0.4cm; } }
+
+@media screen and (max-width: 520px) {
+  .main__catalogo .div-row-cat .div-w-cat .main__catalogo__info h5 {
+    font-size: 0.3cm; }
+  .main__catalogo .div-row-cat .div-w-cat .precio {
+    font-size: 0.3cm;
+    text-align: right; } }
 
 /* Termina catalogo */
 /* Empieza nosotros */
