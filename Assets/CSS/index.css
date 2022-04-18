@@ -808,7 +808,6 @@
 body {
   width: 100%;
   max-width: 100vw;
-  font-size: 62.5%;
   overflow-x: hidden;
   height: 100%;
   grid-template-columns: 1fr;
@@ -816,6 +815,7 @@ body {
   animation: animation__body 2000ms linear 1 both; }
 
 .main {
+  font-size: 62.75%;
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -918,6 +918,7 @@ footer {
 
 /* Empieza header */
 header {
+  font-size: 62.75%;
   background-color: black; }
   header nav {
     display: flex;
@@ -1059,175 +1060,174 @@ header {
 
 /* Termina header */
 /* Empieza index y promos_2 */
-.main__h2 {
-  font-size: 10em; }
-
-.main__title {
-  font-size: 15em; }
-
-.main__section__article1 {
-  font-size: 1.5em;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 700;
-  margin-top: 0.5cm;
-  margin-bottom: 0.5cm;
-  border-bottom: black 0.4cm solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: flex-start;
-  gap: 4rem;
-  flex-wrap: nowrap;
-  width: 100%;
-  border-top: solid 0.05cm white;
-  background: rgba(0, 0, 0, 0.5); }
-  .main__section__article1 div .container {
-    row-gap: 2cm; }
-  .main__section__article1 h3 {
-    text-align: center;
-    font-size: 0.8cm;
-    font-weight: 500;
-    color: black;
-    margin: 0.3cm 0.2cm 0.3cm 0.2cm; }
-  .main__section__article1 .promo1 img {
-    width: 450px;
-    position: absolute;
-    top: 200px;
-    right: -30px; }
-  .main__section__article1 .promo2 img {
-    width: 440px;
-    position: absolute;
-    top: 205px;
-    right: -34px; }
-  .main__section__article1 .promo3 img {
-    position: absolute;
-    width: 383px;
-    top: 218px;
-    right: -12px; }
-  .main__section__article1 .promo4 img {
-    position: absolute;
-    width: 333px;
-    top: 255px;
-    right: -23px; }
-  .main__section__article1 .promo5 img {
-    position: absolute;
-    width: 310px;
-    top: 250px;
-    right: 24px; }
-  .main__section__article1 .promo6 img {
-    position: absolute;
-    width: 262px;
-    top: 276px;
-    right: 21px; }
-  .main__section__article1 .promo7_and_8 img {
-    width: 300px;
-    position: absolute;
-    top: 265px;
-    right: 25px; }
-  .main__section__article1 .promo9 img {
-    width: 174px;
-    position: absolute;
-    top: 215px;
-    right: 98px; }
-  .main__section__article1 .promo10 img {
-    width: 300px;
-    position: absolute;
-    top: 235px;
-    right: 30px; }
-  .main__section__article1 .promo11 img {
-    width: 270px;
-    position: absolute;
-    top: 250px;
-    right: 60px; }
-  .main__section__article1 .promo12 img {
-    width: 300px;
-    position: absolute;
-    top: 305px;
-    right: 30px; }
-  .main__section__article1 .promo {
-    color: #faf2ee;
-    width: 390px;
-    height: 499px;
-    background-image: url(../Images/Backpromo.jpg);
-    background-size: 378px 517.56px;
-    background-repeat: initial;
-    border-radius: 100px 100px 60px 60px;
-    position: relative;
-    animation-name: rotacion_de_hamburguesas;
-    animation-duration: 10s;
-    animation-delay: 9s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; }
-    .main__section__article1 .promo:hover {
-      transform: scale(1.15); }
-    .main__section__article1 .promo__grid h4 {
-      background-color: red;
-      border: black 0.1cm solid;
-      border-radius: 20%;
-      padding: 10px;
-      font-size: 1.8em;
-      width: 14rem;
-      height: 4rem;
-      margin: auto;
-      margin-top: 11px; }
-    .main__section__article1 .promo__grid h2 {
-      font-size: 2.3em;
-      font-weight: 800;
-      margin-left: 1%;
-      padding-top: 6.2rem; }
-    .main__section__article1 .promo__grid h6 {
-      color: transparent;
-      height: 4rem; }
-    .main__section__article1 .promo__div {
+.main {
+  font-size: 62.75%; }
+  .main__h2 {
+    font-size: 10em; }
+  .main__title {
+    font-size: 15em; }
+  .main__section__article1 {
+    font-size: 1.5em;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 700;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    border-bottom: black 0.4cm solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    gap: 4rem;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-top: solid 0.05cm white;
+    background: rgba(0, 0, 0, 0.5); }
+    .main__section__article1 div .container {
+      row-gap: 2cm; }
+    .main__section__article1 h3 {
+      text-align: center;
+      font-size: 0.8cm;
+      font-weight: 500;
+      color: black;
+      margin: 0.3cm 0.2cm 0.3cm 0.2cm; }
+    .main__section__article1 .promo1 img {
+      width: 450px;
       position: absolute;
-      top: 273px;
-      right: 70px;
-      background-color: red;
-      border-radius: 100%;
-      border: black 0.1cm solid; }
-
-.main__section__article2 {
-  border-top: black 0.4cm solid; }
-  .main__section__article2 .article__subtitle {
-    animation: LMV 8s linear 0s infinite; }
-  .main__section__article2 .LMV {
-    margin: auto auto auto auto;
-    width: 600px;
-    height: 700px;
-    font-weight: 900;
-    background: linear-gradient(-45deg, #000000, #1f1c1c, #42403f, #1f1917);
-    background-size: cover;
-    border: #000000 0.2cm solid;
-    border-radius: 20% 20% 20% 20%;
-    position: relative;
-    margin-bottom: 2cm; }
-    .main__section__article2 .LMV img {
+      top: 200px;
+      right: -30px; }
+    .main__section__article1 .promo2 img {
+      width: 440px;
       position: absolute;
-      top: 90px;
-      right: -65px;
-      width: 700px; }
-    .main__section__article2 .LMV:hover {
-      transform: scale(1.1); }
-    .main__section__article2 .LMV__nombre {
-      background-color: red;
-      border: black 0.1cm solid;
+      top: 205px;
+      right: -34px; }
+    .main__section__article1 .promo3 img {
       position: absolute;
-      top: 540px;
-      left: 90px; }
-      .main__section__article2 .LMV__nombre h3 {
-        font-size: 1.5cm;
-        margin: 0%; }
-    .main__section__article2 .LMV__precio {
-      background-color: red;
-      border: black 0.1cm solid;
-      transform: rotate(45deg);
+      width: 383px;
+      top: 218px;
+      right: -12px; }
+    .main__section__article1 .promo4 img {
       position: absolute;
-      top: 83px;
-      left: 338px; }
-      .main__section__article2 .LMV__precio h4 {
-        margin: 0%;
-        font-size: 1.2cm;
-        padding: 0px 70px 0px 70px; }
+      width: 333px;
+      top: 255px;
+      right: -23px; }
+    .main__section__article1 .promo5 img {
+      position: absolute;
+      width: 310px;
+      top: 250px;
+      right: 24px; }
+    .main__section__article1 .promo6 img {
+      position: absolute;
+      width: 262px;
+      top: 276px;
+      right: 21px; }
+    .main__section__article1 .promo7_and_8 img {
+      width: 300px;
+      position: absolute;
+      top: 265px;
+      right: 25px; }
+    .main__section__article1 .promo9 img {
+      width: 174px;
+      position: absolute;
+      top: 215px;
+      right: 98px; }
+    .main__section__article1 .promo10 img {
+      width: 300px;
+      position: absolute;
+      top: 235px;
+      right: 30px; }
+    .main__section__article1 .promo11 img {
+      width: 270px;
+      position: absolute;
+      top: 250px;
+      right: 60px; }
+    .main__section__article1 .promo12 img {
+      width: 300px;
+      position: absolute;
+      top: 305px;
+      right: 30px; }
+    .main__section__article1 .promo {
+      color: #faf2ee;
+      width: 390px;
+      height: 499px;
+      background-image: url(../Images/Backpromo.jpg);
+      background-size: 378px 517.56px;
+      background-repeat: initial;
+      border-radius: 100px 100px 60px 60px;
+      position: relative;
+      animation-name: rotacion_de_hamburguesas;
+      animation-duration: 10s;
+      animation-delay: 9s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+      .main__section__article1 .promo:hover {
+        transform: scale(1.15); }
+      .main__section__article1 .promo__grid h4 {
+        background-color: red;
+        border: black 0.1cm solid;
+        border-radius: 20%;
+        padding: 10px;
+        font-size: 1.8em;
+        width: 14rem;
+        height: 4rem;
+        margin: auto;
+        margin-top: 11px; }
+      .main__section__article1 .promo__grid h2 {
+        font-size: 2.3em;
+        font-weight: 800;
+        margin-left: 1%;
+        padding-top: 6.2rem; }
+      .main__section__article1 .promo__grid h6 {
+        color: transparent;
+        height: 4rem; }
+      .main__section__article1 .promo__div {
+        position: absolute;
+        top: 273px;
+        right: 70px;
+        background-color: red;
+        border-radius: 100%;
+        border: black 0.1cm solid; }
+  .main__section__article2 {
+    border-top: black 0.4cm solid; }
+    .main__section__article2 .article__subtitle {
+      animation: LMV 8s linear 0s infinite; }
+    .main__section__article2 .LMV {
+      margin: auto auto auto auto;
+      width: 600px;
+      height: 700px;
+      font-weight: 900;
+      background: linear-gradient(-45deg, #000000, #1f1c1c, #42403f, #1f1917);
+      background-size: cover;
+      border: #000000 0.2cm solid;
+      border-radius: 20% 20% 20% 20%;
+      position: relative;
+      margin-bottom: 2cm; }
+      .main__section__article2 .LMV img {
+        position: absolute;
+        top: 90px;
+        right: -65px;
+        width: 700px; }
+      .main__section__article2 .LMV:hover {
+        transform: scale(1.1); }
+      .main__section__article2 .LMV__nombre {
+        background-color: red;
+        border: black 0.1cm solid;
+        position: absolute;
+        top: 540px;
+        left: 90px; }
+        .main__section__article2 .LMV__nombre h3 {
+          font-size: 1.5cm;
+          margin: 0%; }
+      .main__section__article2 .LMV__precio {
+        background-color: red;
+        border: black 0.1cm solid;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 83px;
+        left: 338px; }
+        .main__section__article2 .LMV__precio h4 {
+          margin: 0%;
+          font-size: 1.2cm;
+          padding: 0px 70px 0px 70px; }
 
 /* Animaciones */
 @keyframes LMV {
