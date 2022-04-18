@@ -2,6 +2,8 @@
 
 .main__catalogo {
   padding: 0%;
+  width: 100%;
+  overflow: hidden;
 
   .div-row-cat {
     display: flex;
@@ -10,7 +12,11 @@
     .div-w-cat {
       width: 50%;
 
-
+      &:hover{
+        transform: scale(0.9);
+        border: 0.3cm white solid;
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.616), rgba(38, 38, 38, 0.577), rgba(0, 0, 0, 0.587));
+      }
 
       .gap-cat {
         gap: 25%;
@@ -20,9 +26,10 @@
         width: 62%;
         height: 300px;
         position: relative;
-        left: -6.5%;
+        left: -2.5%;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
       }
 
       .precio {
@@ -31,7 +38,7 @@
       }
 
       .mover {
-        margin-left: 20%;
+        margin-left: 26%;
       }
 
       .dcq {
@@ -45,7 +52,7 @@
 
         &__line {
           height: 0.2rem;
-          background-color: white;
+          background-color: $secondary;
         }
 
         text-align: left;
@@ -87,15 +94,15 @@
         width: 100%;
 
         .mover {
-          margin-left: 33%;
+          margin-left: 30%;
         }
 
         .dcq {
-          margin-left: 33%;
+          margin-left: 30%;
         }
 
         img {
-          margin-left: 33%;
+          margin-left: 30%;
           height: 34vw;
           width: 44vw;
         }

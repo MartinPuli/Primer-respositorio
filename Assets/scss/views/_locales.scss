@@ -60,7 +60,7 @@ main {
 
         .locales {
             font-weight: bold;
-            color: white;
+            color: $secondary;
             margin: auto auto;
             border-radius: 20%;
 
@@ -80,7 +80,7 @@ main {
                     &__btn {
                         font-family: 'Times New Roman', Times, serif;
                         font-size: 0.6cm;
-                        color: white;
+                        color: $secondary;
                         border: 0.2cm white solid;
                         background-color: transparent;
 
@@ -99,7 +99,7 @@ main {
 
     .digital__a {
         padding: 0.3cm;
-        background-color: white;
+        background-color: $secondary;
 
         &:hover {
             padding: 5%;

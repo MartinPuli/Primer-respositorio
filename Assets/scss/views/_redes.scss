@@ -35,52 +35,59 @@
         }
     }
 
-    .botons {
-        @include disp-flex(row, 2cm, justify-content-center);
-        display: block;
+    form {
+        border-radius: 1%;
+
+        .botons {
+            @include disp-flex(row, 2cm, justify-content-center);
+            display: block;
+
+            .btn-enviar,
+            .btn-reset {
+                height: 1cm;
+                font-size: 1.5em;
+                margin-bottom: 0.1cm;
+                margin-right: 0.4cm;
+            }
+
+        }
+    }
+
+    .btn-enviar,
+    .btn-reset,
+    .btn-red{
         position: relative;
         overflow: hidden;
-
-
-        .btn-enviar,
-        .btn-reset {
-            position: relative;
-            height: 1cm;
+    
+        span {
+            transition: transform 0.2s ease-out;
+        }
+    
+        span:first-child {
+            display: inline-block;
+        }
+    
+        span:last-child {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-1000%);
+        }
+    
+        &:hover span:first-child {
+            transform: translateY(1000%);
+        }
+    
+        &:hover span:last-child {
+            transform: translateY(0%);
+            left: 40%;
+            width: 20%;
             font-size: 1.5em;
-            position: relative;
-            margin-bottom: 0.1cm;
-            margin-right: 0.4cm;
-
-            span {
-                transition: transform 0.2s ease-out;
-            }
-
-            span:first-child {
-                display: inline-block;
-            }
-
-            span:last-child {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transform: translateY(-1000%);
-            }
-
-            &:hover span:first-child {
-                transform: translateY(1000%);
-            }
-
-            &:hover span:last-child {
-                transform: translateY(0%);
-                left: 40%;
-                width: 20%;
-                font-size: 1.5em;
-            }
         }
     }
 }
