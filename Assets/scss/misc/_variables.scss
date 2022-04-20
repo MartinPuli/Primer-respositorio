@@ -7,46 +7,47 @@ $secondary: rgb(250, 242, 238);
 @for $w from 1 through 100 {
     .w-#{$w} {
         width: $w*1%;
-    };
-    
+    }
+
+    ;
+
 }
 
 @for $h from 1 through 100 {
     .h-#{$h} {
         width: #{$h}vw;
-    };
+    }
+
+    ;
 }
 
-$border:(
-    "": solid,
+$border:("": solid,
     -bottom: solid,
     -top: solid,
     -left: solid,
-    -right: solid
-);
+    -right: solid);
 
-@each $location, $values in $border{
-    .border#{$location}-mio{
+@each $location,
+$values in $border {
+    .border#{$location}-mio {
         border#{$location}: $values;
     }
 }
 
-$borders-color:(
-    black: black,
+$borders-color:(black: black,
     grey: rgb(156, 155, 155),
     red: red,
     sec: $secondary,
-    prim: $principal
-);
+    prim: $principal);
 
-@each $color, $value in $borders-color{
-    .border-#{$color}{
+@each $color,
+$value in $borders-color {
+    .border-#{$color} {
         border-color: $value;
     }
 }
 
-$borders-width:(
-    super-small: 0.1cm,
+$borders-width:(super-small: 0.1cm,
     s: 0.2cm,
     m: 0.3cm,
     big: 0.4cm,
@@ -54,17 +55,17 @@ $borders-width:(
     gigant: 1cm,
 );
 
-@each $width, $value in $borders-width{
-    .border-#{$width}{
+@each $width,
+$value in $borders-width {
+    .border-#{$width} {
         border-width: $value;
     }
 }
 
-@for $g from 1 through 50{
-    .gap-#{$g}mm{
-        gap: $g/10*1cm    
-    };
+@for $g from 1 through 50 {
+    .gap-#{$g}mm {
+        gap: $g/10*1cm
+    }
+
+    ;
 }
-
-
-

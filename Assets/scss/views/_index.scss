@@ -22,7 +22,7 @@
         border-top: solid 0.05cm white;
         background: rgba(0, 0, 0, 0.500);
 
-        div .container{
+        div .container {
             row-gap: 2cm;
         }
 
@@ -122,7 +122,7 @@
             animation-name: rotacion_de_hamburguesas;
             animation-delay: 9s;
 
-            &:hover{
+            &:hover {
                 transform: scale(1.15);
             }
 
@@ -192,7 +192,7 @@
                 width: 700px;
             }
 
-            &:hover{
+            &:hover {
                 transform: scale(1.1);
             }
 
@@ -538,7 +538,7 @@
                 margin: auto;
                 margin-bottom: 1cm;
 
-                &:hover{
+                &:hover {
                     transform: scale(1.15);
                 }
 
@@ -578,11 +578,11 @@
 
 @media screen and (max-width: 500px) {
     .main {
-        &__title{
+        &__title {
             font-size: 6em;
         }
 
-        &__h2{
+        &__h2 {
             font-size: 4.5em;
         }
 

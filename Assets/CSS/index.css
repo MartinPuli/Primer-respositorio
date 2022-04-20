@@ -1492,7 +1492,8 @@ header {
         overflow: hidden; }
       .main__catalogo .div-row-cat .div-w-cat .precio {
         animation: precio_catalogo 1s linear infinite;
-        text-align: right; }
+        text-align: right;
+        width: 30%; }
       .main__catalogo .div-row-cat .div-w-cat .mover {
         margin-left: 26%; }
       .main__catalogo .div-row-cat .div-w-cat .dcq {
