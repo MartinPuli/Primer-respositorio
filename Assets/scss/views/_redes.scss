@@ -69,10 +69,10 @@
     
         span:last-child {
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -103,8 +103,6 @@
         }
 
         .section__nets {
-            display: flex;
-            display: grid;
             @include disp-grid(1fr 1fr, 1fr 1fr, space-evenly);
         }
     }
@@ -114,9 +112,7 @@
 
     .main {
         .section__nets {
-            display: flex;
             @include disp-flex(column, 1cm, space-evenly, space-evenly);
-            height: auto;
 
             .card {
                 width: 18rem;

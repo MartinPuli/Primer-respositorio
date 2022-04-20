@@ -5,4 +5,4 @@
 
 #### Vea aquí el [demo](https://martinpuli.github.io/Primer-respositorio/) 
 
-##### Uso de html y Css
+#### Vea aquí el [proyecto subido a netlify](https://maxpliburguers.netlify.app/index.html)

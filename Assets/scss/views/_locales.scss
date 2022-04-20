@@ -21,41 +21,40 @@ main {
             transform: translateX(25%);
         }
 
+        .BgDeLocales{
+            background-size: cover;
+            height: 60vw;
+        }
+
 
         .charcas{
             background-image: url(../Images/charcas.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .mendoza{
             background-image: url(../Images/mendoza.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .iriarte{
             background-image: url(../Images/iriarte.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .moreno {
             background-image: url(../Images/moreno.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .laplata {
             background-image: url(../Images/laplata.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .cordoba {
             background-image: url(../Images/cordoba.jpg);
-            background-size: cover;
-            height: 60vw;
+            @extend .BgDeLocales;
         }
 
         .locales {

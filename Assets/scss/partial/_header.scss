@@ -163,21 +163,19 @@ header {
                     z-index: 3;
                     background-color: $principal;
                     color: $secondary;
-                    transition: all 2s ease-in;
+                    transition: all 0.8s ease-in;
                     width: auto;
 
                     li {
                         display: block;
                         font-size: 1em;
-                        transition: all 2s ease-in;
-                        height: auto;
+                        transition: all 0.8s ease-in;
                         text-align: left;
-                        transform: translateY(0%);
+                        height: auto;
 
                         &:hover {
                             background-color: $secondary;
                             border-radius: 0%;
-                            height: auto;
                         }
 
                         &:hover a {

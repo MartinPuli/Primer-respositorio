@@ -820,16 +820,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #faf2ee;
-  animation-name: main_background;
-  animation-duration: 16s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: main_background 16s linear infinite;
   background: fixed; }
   .main .background {
     height: 100%;
     width: 100%;
     background-image: url(../Images/Background.jpg);
-    animation: background-move 100s linear infinite; }
+    animation: background_move 100s linear infinite; }
   .main a {
     color: #faf2ee;
     text-decoration: none; }
@@ -866,7 +863,7 @@ body {
   100% {
     background: linear-gradient(-45deg, #fb9b00, #d1850a, #a07d0c, #d69600); } }
 
-@keyframes background-move {
+@keyframes background_move {
   100% {
     background-position: 3000px 0px; } }
 
@@ -881,6 +878,7 @@ body {
 /* Helpers */
 /* Empieza footer */
 footer {
+  font-size: 62.75%;
   color: #faf2ee;
   background-color: #c3bfbf;
   background-image: url(../Images/background__footer.png);
@@ -1028,19 +1026,17 @@ header {
           z-index: 3;
           background-color: black;
           color: #faf2ee;
-          transition: all 2s ease-in;
+          transition: all 0.8s ease-in;
           width: auto; }
           header nav ul li .submenu li {
             display: block;
             font-size: 1em;
-            transition: all 2s ease-in;
-            height: auto;
+            transition: all 0.8s ease-in;
             text-align: left;
-            transform: translateY(0%); }
+            height: auto; }
             header nav ul li .submenu li:hover {
               background-color: #faf2ee;
-              border-radius: 0%;
-              height: auto; }
+              border-radius: 0%; }
             header nav ul li .submenu li:hover a {
               color: black; }
 
@@ -1069,7 +1065,6 @@ header {
   .main__section__article1 {
     font-size: 1.5em;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-weight: 700;
     margin-top: 0.5cm;
     margin-bottom: 0.5cm;
     border-bottom: black 0.4cm solid;
@@ -1085,7 +1080,6 @@ header {
     .main__section__article1 div .container {
       row-gap: 2cm; }
     .main__section__article1 h3 {
-      text-align: center;
       font-size: 0.8cm;
       font-weight: 500;
       color: black;
@@ -1151,34 +1145,33 @@ header {
       height: 499px;
       background-image: url(../Images/Backpromo.jpg);
       background-size: 378px 517.56px;
-      background-repeat: initial;
       border-radius: 100px 100px 60px 60px;
       position: relative;
+      animation: rotacion_de_hamburguesas 10s linear 9s infinite;
       animation-name: rotacion_de_hamburguesas;
-      animation-duration: 10s;
-      animation-delay: 9s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite; }
+      animation-delay: 9s; }
       .main__section__article1 .promo:hover {
         transform: scale(1.15); }
-      .main__section__article1 .promo__grid h4 {
-        background-color: red;
-        border: black 0.1cm solid;
-        border-radius: 20%;
-        padding: 10px;
-        font-size: 1.8em;
-        width: 14rem;
-        height: 4rem;
-        margin: auto;
-        margin-top: 11px; }
-      .main__section__article1 .promo__grid h2 {
-        font-size: 2.3em;
-        font-weight: 800;
-        margin-left: 1%;
-        padding-top: 6.2rem; }
-      .main__section__article1 .promo__grid h6 {
-        color: transparent;
-        height: 4rem; }
+      .main__section__article1 .promo__grid {
+        display: grid; }
+        .main__section__article1 .promo__grid h4 {
+          background-color: red;
+          border: black 0.1cm solid;
+          border-radius: 20%;
+          padding: 10px;
+          font-size: 1.8em;
+          width: 14rem;
+          height: 4rem;
+          margin: auto;
+          margin-top: 11px; }
+        .main__section__article1 .promo__grid h2 {
+          font-size: 2.3em;
+          font-weight: 800;
+          margin-left: 1%;
+          padding-top: 6.2rem; }
+        .main__section__article1 .promo__grid h6 {
+          color: transparent;
+          height: 4rem; }
       .main__section__article1 .promo__div {
         position: absolute;
         top: 273px;
@@ -1191,14 +1184,14 @@ header {
     .main__section__article2 .article__subtitle {
       animation: LMV 8s linear 0s infinite; }
     .main__section__article2 .LMV {
-      margin: auto auto auto auto;
+      margin: auto;
       width: 600px;
       height: 700px;
       font-weight: 900;
       background: linear-gradient(-45deg, #000000, #1f1c1c, #42403f, #1f1917);
       background-size: cover;
       border: #000000 0.2cm solid;
-      border-radius: 20% 20% 20% 20%;
+      border-radius: 20%;
       position: relative;
       margin-bottom: 2cm; }
       .main__section__article2 .LMV img {
@@ -1225,9 +1218,8 @@ header {
         top: 83px;
         left: 338px; }
         .main__section__article2 .LMV__precio h4 {
-          margin: 0%;
           font-size: 1.2cm;
-          padding: 0px 70px 0px 70px; }
+          padding: 0px 70px; }
 
 /* Animaciones */
 @keyframes LMV {
@@ -1424,19 +1416,17 @@ header {
     width: 340px;
     height: 28rem;
     font-weight: 900;
-    border-radius: 15% 15% 15% 15%;
+    border-radius: 15%;
     margin: auto;
     margin-bottom: 1cm; }
     .main__section__article2 .LMV:hover {
       transform: scale(1.15); }
     .main__section__article2 .LMV img {
-      position: absolute;
       top: 5.5em;
       left: -5rem;
-      margin: auto auto;
+      margin: auto;
       width: 150%; }
     .main__section__article2 .LMV__nombre {
-      position: absolute;
       top: 22rem;
       left: 2.7rem;
       width: 15rem; }
@@ -1449,8 +1439,7 @@ header {
       transform: rotate(40deg); }
       .main__section__article2 .LMV__precio h4 {
         margin: 0%;
-        font-size: 2.7em;
-        padding: 0px 70px 0px 70px; } }
+        font-size: 2.7em; } }
 
 @media screen and (max-width: 500px) {
   .main__title {
@@ -1476,13 +1465,11 @@ header {
       transform: rotate(35deg); }
       .main__section__article2 .LMV__precio h4 {
         font-size: 2em;
-        padding: 0px 60px 0px 60px; } }
+        padding: 0px 60px; } }
 
 /* Termina index y promos_2 */
 /* Empieza catalogo */
 .main__catalogo {
-  padding: 0%;
-  width: 100%;
   overflow: hidden; }
   .main__catalogo .div-row-cat {
     display: flex;
@@ -1572,7 +1559,6 @@ header {
   background-color: rgba(0, 0, 0, 0.716); }
   .main__section img {
     width: 44vw;
-    height: auto;
     margin-top: auto;
     margin-bottom: auto; }
   .main__section article {
@@ -1616,30 +1602,21 @@ main .section-locales {
     transform: translateX(-25%); }
   main .section-locales .locales__button2 {
     transform: translateX(25%); }
+  main .section-locales .BgDeLocales, main .section-locales .charcas, main .section-locales .mendoza, main .section-locales .iriarte, main .section-locales .moreno, main .section-locales .laplata, main .section-locales .cordoba {
+    background-size: cover;
+    height: 60vw; }
   main .section-locales .charcas {
-    background-image: url(../Images/charcas.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/charcas.jpg); }
   main .section-locales .mendoza {
-    background-image: url(../Images/mendoza.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/mendoza.jpg); }
   main .section-locales .iriarte {
-    background-image: url(../Images/iriarte.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/iriarte.jpg); }
   main .section-locales .moreno {
-    background-image: url(../Images/moreno.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/moreno.jpg); }
   main .section-locales .laplata {
-    background-image: url(../Images/laplata.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/laplata.jpg); }
   main .section-locales .cordoba {
-    background-image: url(../Images/cordoba.jpg);
-    background-size: cover;
-    height: 60vw; }
+    background-image: url(../Images/cordoba.jpg); }
   main .section-locales .locales {
     font-weight: bold;
     color: #faf2ee;
@@ -1763,10 +1740,10 @@ main .digital__a {
   .main .btn-reset span:last-child,
   .main .btn-red span:last-child {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1790,8 +1767,6 @@ main .digital__a {
     font-size: 8.6em;
     margin: 10% auto; }
   main .section__nets {
-    display: flex;
-    display: grid;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1802,13 +1777,11 @@ main .digital__a {
 @media screen and (max-width: 720px) {
   .main .section__nets {
     display: flex;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: space-evenly;
     gap: 1cm;
-    flex-wrap: nowrap;
-    height: auto; }
+    flex-wrap: nowrap; }
     .main .section__nets .card {
       width: 18rem; }
       .main .section__nets .card img {

@@ -14,7 +14,6 @@
     &__section__article1 {
         font-size: 1.5em;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-        font-weight: 700;
         margin-top: 0.5cm;
         margin-bottom: 0.5cm;
         border-bottom: black 0.4cm solid;
@@ -28,7 +27,6 @@
         }
 
         h3 {
-            text-align: center;
             font-size: 0.8cm;
             font-weight: 500;
             color: $principal;
@@ -118,20 +116,19 @@
             height: 499px;
             background-image: url(../Images/Backpromo.jpg);
             background-size: 378px 517.56px;
-            background-repeat: initial;
             border-radius: 100px 100px 60px 60px;
             position: relative;
+            animation: rotacion_de_hamburguesas 10s linear 9s infinite;
             animation-name: rotacion_de_hamburguesas;
-            animation-duration: 10s;
             animation-delay: 9s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
 
             &:hover{
                 transform: scale(1.15);
             }
 
             &__grid {
+                display: grid;
+
                 h4 {
                     background-color: red;
                     border: black 0.1cm solid;
@@ -177,14 +174,14 @@
         }
 
         .LMV {
-            margin: auto auto auto auto;
+            margin: auto;
             width: 600px;
             height: 700px;
             font-weight: 900;
             background: linear-gradient(-45deg, #000000, #1f1c1c, #42403f, #1f1917);
             background-size: cover;
             border: #000000 0.2cm solid;
-            border-radius: 20% 20% 20% 20%;
+            border-radius: 20%;
             position: relative;
             margin-bottom: 2cm;
 
@@ -221,9 +218,8 @@
                 left: 338px;
 
                 h4 {
-                    margin: 0%;
                     font-size: 1.2cm;
-                    padding: 0px 70px 0px 70px;
+                    padding: 0px 70px;
                 }
             }
         }
@@ -538,7 +534,7 @@
                 width: 340px;
                 height: 28rem;
                 font-weight: 900;
-                border-radius: 15% 15% 15% 15%;
+                border-radius: 15%;
                 margin: auto;
                 margin-bottom: 1cm;
 
@@ -547,15 +543,13 @@
                 }
 
                 img {
-                    position: absolute;
                     top: 5.5em;
                     left: -5rem;
-                    margin: auto auto;
+                    margin: auto;
                     width: 150%;
                 }
 
                 &__nombre {
-                    position: absolute;
                     top: 22rem;
                     left: 2.7rem;
                     width: 15rem;
@@ -574,7 +568,6 @@
                     h4 {
                         margin: 0%;
                         font-size: 2.7em;
-                        padding: 0px 70px 0px 70px;
                     }
                 }
             }
@@ -621,7 +614,7 @@
 
                     h4 {
                         font-size: 2em;
-                        padding: 0px 60px 0px 60px;
+                        padding: 0px 60px;
                     }
                 }
             }
