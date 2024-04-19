@@ -1,5 +1,3 @@
-# Primer-respositorio
-
 ## Proyecto de Martin Ezequiel Pulitano
 
 
